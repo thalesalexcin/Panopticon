@@ -9,17 +9,64 @@
 #include "UnrealProject.generated.dep.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeUnrealProject() {}
+	void ABubblesGenerator::StaticRegisterNativesABubblesGenerator()
+	{
+	}
+	IMPLEMENT_CLASS(ABubblesGenerator, 2057234911);
 	void AUnrealProjectGameMode::StaticRegisterNativesAUnrealProjectGameMode()
 	{
 	}
 	IMPLEMENT_CLASS(AUnrealProjectGameMode, 3408781336);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 
+	UNREALPROJECT_API class UClass* Z_Construct_UClass_ABubblesGenerator_NoRegister();
+	UNREALPROJECT_API class UClass* Z_Construct_UClass_ABubblesGenerator();
 	UNREALPROJECT_API class UClass* Z_Construct_UClass_AUnrealProjectGameMode_NoRegister();
 	UNREALPROJECT_API class UClass* Z_Construct_UClass_AUnrealProjectGameMode();
 	UNREALPROJECT_API class UPackage* Z_Construct_UPackage__Script_UnrealProject();
+	UClass* Z_Construct_UClass_ABubblesGenerator_NoRegister()
+	{
+		return ABubblesGenerator::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ABubblesGenerator()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_UnrealProject();
+			OuterClass = ABubblesGenerator::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_Column = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Column"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(Column, ABubblesGenerator), 0x0010000000000005);
+				UProperty* NewProp_Row = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Row"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(Row, ABubblesGenerator), 0x0010000000000005);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BubblesGenerator.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BubblesGenerator.h"));
+				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_Column, TEXT("Category"), TEXT("Generation"));
+				MetaData->SetValue(NewProp_Column, TEXT("ModuleRelativePath"), TEXT("BubblesGenerator.h"));
+				MetaData->SetValue(NewProp_Row, TEXT("Category"), TEXT("Generation"));
+				MetaData->SetValue(NewProp_Row, TEXT("ModuleRelativePath"), TEXT("BubblesGenerator.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ABubblesGenerator(Z_Construct_UClass_ABubblesGenerator, &ABubblesGenerator::StaticClass, TEXT("ABubblesGenerator"), false, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ABubblesGenerator);
 	UClass* Z_Construct_UClass_AUnrealProjectGameMode_NoRegister()
 	{
 		return AUnrealProjectGameMode::StaticClass();
@@ -62,8 +109,8 @@ void EmptyLinkFunctionForGeneratedCodeUnrealProject() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/UnrealProject")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x8FFF9CBE;
-			Guid.B = 0x5F829CB8;
+			Guid.A = 0x8926B497;
+			Guid.B = 0xE72CB9DB;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

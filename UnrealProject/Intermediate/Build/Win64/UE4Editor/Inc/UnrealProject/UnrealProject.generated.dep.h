@@ -5,6 +5,9 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
+#ifndef UNREALPROJECT_BubblesGenerator_generated_h
+	#include "BubblesGenerator.h"
+#endif
 #ifndef UNREALPROJECT_UnrealProjectGameMode_generated_h
 	#include "UnrealProjectGameMode.h"
 #endif
