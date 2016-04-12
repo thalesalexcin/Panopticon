@@ -13,69 +13,69 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define UNREALPROJECT_BubblesGenerator_generated_h
 
-#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_RPC_WRAPPERS
-#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_RPC_WRAPPERS_NO_PURE_DECLS
-#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_INCLASS_NO_PURE_DECLS \
+#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_RPC_WRAPPERS
+#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_INCLASS_NO_PURE_DECLS \
 	private: \
-	static void StaticRegisterNativesABubblesGenerator(); \
-	friend UNREALPROJECT_API class UClass* Z_Construct_UClass_ABubblesGenerator(); \
+	static void StaticRegisterNativesUBubblesGenerator(); \
+	friend UNREALPROJECT_API class UClass* Z_Construct_UClass_UBubblesGenerator(); \
 	public: \
-	DECLARE_CLASS(ABubblesGenerator, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/UnrealProject"), NO_API) \
-	DECLARE_SERIALIZER(ABubblesGenerator) \
+	DECLARE_CLASS(UBubblesGenerator, UActorComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/UnrealProject"), NO_API) \
+	DECLARE_SERIALIZER(UBubblesGenerator) \
 	/** Indicates whether the class is compiled into the engine */ \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_INCLASS \
+#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_INCLASS \
 	private: \
-	static void StaticRegisterNativesABubblesGenerator(); \
-	friend UNREALPROJECT_API class UClass* Z_Construct_UClass_ABubblesGenerator(); \
+	static void StaticRegisterNativesUBubblesGenerator(); \
+	friend UNREALPROJECT_API class UClass* Z_Construct_UClass_UBubblesGenerator(); \
 	public: \
-	DECLARE_CLASS(ABubblesGenerator, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/UnrealProject"), NO_API) \
-	DECLARE_SERIALIZER(ABubblesGenerator) \
+	DECLARE_CLASS(UBubblesGenerator, UActorComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/UnrealProject"), NO_API) \
+	DECLARE_SERIALIZER(UBubblesGenerator) \
 	/** Indicates whether the class is compiled into the engine */ \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_STANDARD_CONSTRUCTORS \
+#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ABubblesGenerator(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABubblesGenerator) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABubblesGenerator); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABubblesGenerator); \
+	NO_API UBubblesGenerator(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBubblesGenerator) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UBubblesGenerator); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBubblesGenerator); \
 private: \
 	/** Private copy-constructor, should never be used */ \
-	NO_API ABubblesGenerator(const ABubblesGenerator& InCopy); \
+	NO_API UBubblesGenerator(const UBubblesGenerator& InCopy); \
 public:
 
 
-#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_ENHANCED_CONSTRUCTORS \
+#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
-	NO_API ABubblesGenerator(const ABubblesGenerator& InCopy); \
+	NO_API UBubblesGenerator(const UBubblesGenerator& InCopy); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABubblesGenerator); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABubblesGenerator); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABubblesGenerator)
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UBubblesGenerator); \
+DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBubblesGenerator); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UBubblesGenerator)
 
 
-#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_8_PROLOG
-#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_GENERATED_BODY_LEGACY \
+#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_9_PROLOG
+#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_RPC_WRAPPERS \
-	UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_INCLASS \
-	UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_STANDARD_CONSTRUCTORS \
+	UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_RPC_WRAPPERS \
+	UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_INCLASS \
+	UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_GENERATED_BODY \
+#define UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_INCLASS_NO_PURE_DECLS \
-	UnrealProject_Source_UnrealProject_BubblesGenerator_h_11_ENHANCED_CONSTRUCTORS \
+	UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_INCLASS_NO_PURE_DECLS \
+	UnrealProject_Source_UnrealProject_BubblesGenerator_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -2,30 +2,31 @@
 
 #pragma once
 
-#include "GameFramework/Actor.h"
+#include "Components/ActorComponent.h"
 #include "BubblesGenerator.generated.h"
 
-UCLASS()
-class UNREALPROJECT_API ABubblesGenerator : public AActor
+
+UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+class UNREALPROJECT_API UBubblesGenerator : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Generation")
-		uint8 Row = 5;
+public:	
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Generation")
-		uint8 Column = 5;
+	uint8 Row = 5;
 
-	// Sets default values for this actor's properties
-	ABubblesGenerator();
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Generation")
+	uint8 Column = 5;
 
-	// Called when the game starts or when spawned
+	// Sets default values for this component's properties
+	UBubblesGenerator();
+
+	// Called when the game starts
 	virtual void BeginPlay() override;
-
+	
 	// Called every frame
-	virtual void Tick(float DeltaSeconds) override;
-
+	virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
 
 private:
 	float _CellWidth;

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+<RuntimeProperties>
+<CrashVersion>3</CrashVersion>
+<CrashGUID>UE4CC-Windows-71D7BCD740EB8FD89ECA1696C07DB07E</CrashGUID>
+<ProcessId>8928</ProcessId>
+<IsInternalBuild>0</IsInternalBuild>
+<IsPerforceBuild>0</IsPerforceBuild>
+<IsSourceDistribution>0</IsSourceDistribution>
+<SecondsSinceStart>5280</SecondsSinceStart>
+<GameName>UE4-UnrealProject</GameName>
+<ExecutableName>UE4Editor</ExecutableName>
+<BuildConfiguration>Development</BuildConfiguration>
+<PlatformName>Windows</PlatformName>
+<PlatformNameIni>Windows</PlatformNameIni>
+<EngineMode>Editor</EngineMode>
+<EngineVersion>4.11.1-2934540+++UE4+Release-4.11</EngineVersion>
+<CommandLine>&quot;D:\_FAC\ENJMIN\Semestre_2\Panopticon\PanopticonGit\Panopticon\UnrealProject\UnrealProject.uproject&quot; </CommandLine>
+<LanguageLCID>9</LanguageLCID>
+<AppDefaultLocale>fr_FR</AppDefaultLocale>
+<IsUE4Release>1</IsUE4Release>
+<UserName></UserName>
+<BaseDir>C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/Win64/</BaseDir>
+<RootDir>C:/Program Files (x86)/Epic Games/4.11/</RootDir>
+<MachineId>157574B24F75329B7EFD629D78C10B80</MachineId>
+<EpicAccountId>66901c5a7cd8474490e46c4ab7bff115</EpicAccountId>
+<CallStack></CallStack>
+<SourceContext></SourceContext>
+<UserDescription></UserDescription>
+<ErrorMessage>Assertion failed: ChildCount &gt; AttachChildren.Num() [File:D:\BuildFarm\buildmachine_++UE4+Release-4.11\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp] [Line: 837] &nl;AttachChildren count increased while detaching &apos;None&apos;, likely caused by OnAttachmentChanged introducing new children, which could lead to an infinite loop.&nl;</ErrorMessage>
+<CrashDumpMode>0</CrashDumpMode>
+<Misc.NumberOfCores>4</Misc.NumberOfCores>
+<Misc.NumberOfCoresIncludingHyperthreads>8</Misc.NumberOfCoresIncludingHyperthreads>
+<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+<Misc.CPUBrand>Intel(R) Core(TM) i7-4720HQ CPU @ 2.60GHz</Misc.CPUBrand>
+<Misc.PrimaryGPUBrand>Intel(R) HD Graphics 4600</Misc.PrimaryGPUBrand>
+<Misc.OSVersionMajor>Windows 7</Misc.OSVersionMajor>
+<Misc.OSVersionMinor>Service Pack 1</Misc.OSVersionMinor>
+<MemoryStats.TotalPhysical>8506339328</MemoryStats.TotalPhysical>
+<MemoryStats.TotalVirtual>8796092891136</MemoryStats.TotalVirtual>
+<MemoryStats.PageSize>65536</MemoryStats.PageSize>
+<MemoryStats.TotalPhysicalGB>8</MemoryStats.TotalPhysicalGB>
+<MemoryStats.AvailablePhysical>1620865024</MemoryStats.AvailablePhysical>
+<MemoryStats.AvailableVirtual>8793056452608</MemoryStats.AvailableVirtual>
+<MemoryStats.UsedPhysical>1468567552</MemoryStats.UsedPhysical>
+<MemoryStats.PeakUsedPhysical>1468792832</MemoryStats.PeakUsedPhysical>
+<MemoryStats.UsedVirtual>2354089984</MemoryStats.UsedVirtual>
+<MemoryStats.PeakUsedVirtual>2354089984</MemoryStats.PeakUsedVirtual>
+<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+</RuntimeProperties>
+<PlatformProperties>
+<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+</PlatformProperties>
+</FGenericCrashContext>

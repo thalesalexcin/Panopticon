@@ -8,6 +8,9 @@
 #ifndef UNREALPROJECT_BubblesGenerator_generated_h
 	#include "BubblesGenerator.h"
 #endif
+#ifndef UNREALPROJECT_CityMap_generated_h
+	#include "CityMap.h"
+#endif
 #ifndef UNREALPROJECT_UnrealProjectGameMode_generated_h
 	#include "UnrealProjectGameMode.h"
 #endif
