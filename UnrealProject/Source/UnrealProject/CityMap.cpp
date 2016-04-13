@@ -41,28 +41,21 @@ void UCityMap::BeginPlay()
 // Called every frame
 void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
-	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
-
-	FVector move(0,0,0);
-	if (Up)
-		move.X += Speed * DeltaTime;
-
-	if (Down)
-		move.X -= Speed * DeltaTime;
-
-	if (Left)
-		move.Y -= Speed * DeltaTime;
-
-	if (Right)
-		move.Y += Speed * DeltaTime;
-
-	if (ZoomIn)
-		move.Z += Speed * DeltaTime;
-
-	if (ZoomOut)
-		move.Z -= Speed * DeltaTime;
-
-	Translate(move);
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+	
+	if(CurrentGrabPosition != VectorNull)
+	{
+		if (LastGrabPosition == VectorNull)
+			LastGrabPosition = CurrentGrabPosition;
+		else
+		{
+			FVector diff = CurrentGrabPosition - LastGrabPosition;
+			diff.Z = 0;
+			Translate(diff);
+		}
+	}
+	else 
+		LastGrabPosition = VectorNull;
 	// ...
 }
 

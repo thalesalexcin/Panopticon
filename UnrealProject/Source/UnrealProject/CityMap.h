@@ -27,6 +27,9 @@ public:
 	bool ZoomIn = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	FVector CurrentGrabPosition = VectorNull;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float Speed = 100;
 
 	// Sets default values for this component's properties
@@ -39,5 +42,7 @@ public:
 	virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
 
 	void UCityMap::Translate(FVector direction);
-	
+private:
+	FVector VectorNull = FVector(0,0,0);
+	FVector LastGrabPosition = VectorNull;
 };
