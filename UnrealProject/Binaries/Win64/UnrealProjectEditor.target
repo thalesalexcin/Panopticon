@@ -2,7 +2,7 @@
 	"TargetName" : "UnrealProjectEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "d149f9bc-3f67-4fd2-ad08-501e20cb6cbe",
+	"BuildId" : "",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -15,15 +15,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-UnrealProject-9105.dll",
+			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-UnrealProject.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-UnrealProject-9105.pdb",
+			"Path" : "$(ProjectDir)\\Binaries\\Win64\\UE4Editor-UnrealProject.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)\\Intermediate\\Build\\Win64\\UE4Editor\\Development\\UE4Editor-UnrealProject-9105.lib",
+			"Path" : "$(ProjectDir)\\Intermediate\\Build\\Win64\\UE4Editor\\Development\\UE4Editor-UnrealProject.lib",
 			"Type" : "ImportLibrary"
 		}
 	],

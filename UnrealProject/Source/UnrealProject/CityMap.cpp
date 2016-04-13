@@ -56,6 +56,12 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 	if (Right)
 		move.Y += Speed * DeltaTime;
 
+	if (ZoomIn)
+		move.Z += Speed * DeltaTime;
+
+	if (ZoomOut)
+		move.Z -= Speed * DeltaTime;
+
 	Translate(move);
 	// ...
 }

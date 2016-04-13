@@ -1,0 +1,43 @@
+﻿Log file open, 04/12/16 18:52:39
+LogInit:Display: Running engine for game: UnrealProject
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(821687699) SRandInit(821687699).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.069309
+LogInit:Warning: Incompatible or missing module: UE4Editor-UnrealProject.dll
+Running C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe UnrealProject Development Win64 -project="C:/Users/TENORIO.thales/Desktop/Panopticon/Panopticon/UnrealProject/UnrealProject.uproject" -editorrecompile -progress -noubtmakefiles -NoHotReloadFromIDE -2015
+@progress push 5%
+@progress pop
+ERROR: Failed to find cl.exe in the default toolchain directory C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\../../VC/bin/x86_amd64\cl.exe. Please verify that "Common Tools for Visual C++ 2015" was selected when installing Visual Studio 2015.
+LogInit:Warning: Still incompatible or missing module: UE4Editor-UnrealProject.dll
+LogExit: Preparing to exit.
+LogDerivedDataCache:Display: Max Cache Size: 512 MB
+LogDerivedDataCache: Loaded boot cache 0.04s 46MB C:/Users/TENORIO.thales/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/TENORIO.thales/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/TENORIO.thales/Desktop/Panopticon/Panopticon/UnrealProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/TENORIO.thales/Desktop/Panopticon/Panopticon/UnrealProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+LogDerivedDataCache: Using Local data cache path C:/Users/TENORIO.thales/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+LogDerivedDataCache: Shutdown
+LogModuleManager: Shutting down and abandoning module CookingStats (17)
+LogModuleManager: Shutting down and abandoning module DerivedDataCache (16)
+LogDerivedDataCache: Shutdown
+LogModuleManager: Shutting down and abandoning module DesktopPlatform (15)
+LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+LogModuleManager: Shutting down and abandoning module Landscape (12)
+LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+LogModuleManager: Shutting down and abandoning module Renderer (7)
+LogModuleManager: Shutting down and abandoning module Engine (6)
+LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+LogModuleManager: Shutting down and abandoning module PakFile (1)
+LogExit: Exiting.
+Log file closed, 04/12/16 18:53:38

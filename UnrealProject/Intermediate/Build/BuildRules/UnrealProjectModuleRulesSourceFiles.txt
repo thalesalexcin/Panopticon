@@ -1,3 +1,3 @@
-D:\_FAC\ENJMIN\Semestre_2\Panopticon\PanopticonGit\Panopticon\UnrealProject\Source\UnrealProject\UnrealProject.Build.cs
-D:\_FAC\ENJMIN\Semestre_2\Panopticon\PanopticonGit\Panopticon\UnrealProject\Source\UnrealProject.Target.cs
-D:\_FAC\ENJMIN\Semestre_2\Panopticon\PanopticonGit\Panopticon\UnrealProject\Source\UnrealProjectEditor.Target.cs
+C:\Users\TENORIO.thales\Desktop\Panopticon\Panopticon\UnrealProject\Source\UnrealProject\UnrealProject.Build.cs
+C:\Users\TENORIO.thales\Desktop\Panopticon\Panopticon\UnrealProject\Source\UnrealProject.Target.cs
+C:\Users\TENORIO.thales\Desktop\Panopticon\Panopticon\UnrealProject\Source\UnrealProjectEditor.Target.cs

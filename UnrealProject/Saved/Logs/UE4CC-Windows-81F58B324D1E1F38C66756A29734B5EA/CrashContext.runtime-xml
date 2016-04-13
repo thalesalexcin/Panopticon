@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+<RuntimeProperties>
+<CrashVersion>3</CrashVersion>
+<CrashGUID>UE4CC-Windows-81F58B324D1E1F38C66756A29734B5EA</CrashGUID>
+<ProcessId>5628</ProcessId>
+<IsInternalBuild>0</IsInternalBuild>
+<IsPerforceBuild>0</IsPerforceBuild>
+<IsSourceDistribution>0</IsSourceDistribution>
+<SecondsSinceStart>751</SecondsSinceStart>
+<GameName>UE4-UnrealProject</GameName>
+<ExecutableName>UE4Editor</ExecutableName>
+<BuildConfiguration>Development</BuildConfiguration>
+<PlatformName>Windows</PlatformName>
+<PlatformNameIni>Windows</PlatformNameIni>
+<EngineMode>Editor</EngineMode>
+<EngineVersion>4.11.1-2934540+++UE4+Release-4.11</EngineVersion>
+<CommandLine>&quot;C:/Users/TENORIO.thales/Desktop/Panopticon/Panopticon/UnrealProject/UnrealProject.uproject&quot;-EpicPortal </CommandLine>
+<LanguageLCID>9</LanguageLCID>
+<AppDefaultLocale>fr_FR</AppDefaultLocale>
+<IsUE4Release>1</IsUE4Release>
+<UserName></UserName>
+<BaseDir>C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/Win64/</BaseDir>
+<RootDir>C:/Program Files (x86)/Epic Games/4.11/</RootDir>
+<MachineId>3F4215AD46A6DF335339418D6A2AF078</MachineId>
+<EpicAccountId>8e75d72b47524bb4aface0325b3f7f9a</EpicAccountId>
+<CallStack></CallStack>
+<SourceContext></SourceContext>
+<UserDescription></UserDescription>
+<ErrorMessage>Assertion failed: ChildCount &gt; AttachChildren.Num() [File:D:\BuildFarm\buildmachine_++UE4+Release-4.11\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp] [Line: 837] &nl;AttachChildren count increased while detaching &apos;TRASH_StaticMeshComponent_22&apos;, likely caused by OnAttachmentChanged introducing new children, which could lead to an infinite loop.&nl;</ErrorMessage>
+<CrashDumpMode>0</CrashDumpMode>
+<Misc.NumberOfCores>4</Misc.NumberOfCores>
+<Misc.NumberOfCoresIncludingHyperthreads>8</Misc.NumberOfCoresIncludingHyperthreads>
+<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+<Misc.CPUBrand>Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz</Misc.CPUBrand>
+<Misc.PrimaryGPUBrand>NVIDIA Quadro K2200</Misc.PrimaryGPUBrand>
+<Misc.OSVersionMajor>Windows 8.1</Misc.OSVersionMajor>
+<Misc.OSVersionMinor></Misc.OSVersionMinor>
+<MemoryStats.TotalPhysical>17112190976</MemoryStats.TotalPhysical>
+<MemoryStats.TotalVirtual>140737488224256</MemoryStats.TotalVirtual>
+<MemoryStats.PageSize>65536</MemoryStats.PageSize>
+<MemoryStats.TotalPhysicalGB>16</MemoryStats.TotalPhysicalGB>
+<MemoryStats.AvailablePhysical>10444607488</MemoryStats.AvailablePhysical>
+<MemoryStats.AvailableVirtual>140735043936256</MemoryStats.AvailableVirtual>
+<MemoryStats.UsedPhysical>1192173568</MemoryStats.UsedPhysical>
+<MemoryStats.PeakUsedPhysical>1197006848</MemoryStats.PeakUsedPhysical>
+<MemoryStats.UsedVirtual>1761976320</MemoryStats.UsedVirtual>
+<MemoryStats.PeakUsedVirtual>1767690240</MemoryStats.PeakUsedVirtual>
+<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+</RuntimeProperties>
+<PlatformProperties>
+<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+</PlatformProperties>
+</FGenericCrashContext>

@@ -16,7 +16,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealProject() {}
 	void UCityMap::StaticRegisterNativesUCityMap()
 	{
 	}
-	IMPLEMENT_CLASS(UCityMap, 33312026);
+	IMPLEMENT_CLASS(UCityMap, 1167321445);
 	void AUnrealProjectGameMode::StaticRegisterNativesAUnrealProjectGameMode()
 	{
 	}
@@ -97,6 +97,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_Speed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Speed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(Speed, UCityMap), 0x0010000000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(ZoomIn, UCityMap, bool);
+				UProperty* NewProp_ZoomIn = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ZoomIn"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ZoomIn, UCityMap), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(ZoomIn, UCityMap), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(ZoomOut, UCityMap, bool);
+				UProperty* NewProp_ZoomOut = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ZoomOut"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ZoomOut, UCityMap), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(ZoomOut, UCityMap), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(Left, UCityMap, bool);
 				UProperty* NewProp_Left = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Left"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(Left, UCityMap), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(Left, UCityMap), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(Right, UCityMap, bool);
@@ -117,6 +121,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
 				MetaData->SetValue(NewProp_Speed, TEXT("Category"), TEXT("Movement"));
 				MetaData->SetValue(NewProp_Speed, TEXT("ModuleRelativePath"), TEXT("CityMap.h"));
+				MetaData->SetValue(NewProp_ZoomIn, TEXT("Category"), TEXT("Movement"));
+				MetaData->SetValue(NewProp_ZoomIn, TEXT("ModuleRelativePath"), TEXT("CityMap.h"));
+				MetaData->SetValue(NewProp_ZoomOut, TEXT("Category"), TEXT("Movement"));
+				MetaData->SetValue(NewProp_ZoomOut, TEXT("ModuleRelativePath"), TEXT("CityMap.h"));
 				MetaData->SetValue(NewProp_Left, TEXT("Category"), TEXT("Movement"));
 				MetaData->SetValue(NewProp_Left, TEXT("ModuleRelativePath"), TEXT("CityMap.h"));
 				MetaData->SetValue(NewProp_Right, TEXT("Category"), TEXT("Movement"));
@@ -175,7 +183,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/UnrealProject")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x78B2DD04;
+			Guid.A = 0x7697E2BC;
 			Guid.B = 0x159F9535;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

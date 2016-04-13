@@ -22,6 +22,11 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	bool Left = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool ZoomOut = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool ZoomIn = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float Speed = 100;
 
 	// Sets default values for this component's properties
