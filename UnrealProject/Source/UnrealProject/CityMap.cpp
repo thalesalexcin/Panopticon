@@ -54,8 +54,11 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 			Translate(diff);
 		}
 	}
-	else 
+	else
+	{
 		LastGrabPosition = VectorNull;
+	}
+		
 	// ...
 }
 
