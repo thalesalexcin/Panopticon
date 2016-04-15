@@ -3,6 +3,7 @@
 #pragma once
 
 #include "Components/SceneComponent.h"
+#include "DrawDebugHelpers.h"
 #include "CityMap.generated.h"
 
 
@@ -45,4 +46,6 @@ public:
 private:
 	FVector VectorNull = FVector(0,0,0);
 	FVector LastGrabPosition = VectorNull;
+
+	bool DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams);
 };

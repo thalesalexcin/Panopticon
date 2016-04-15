@@ -39,6 +39,25 @@ void UCityMap::BeginPlay()
 	
 }
 
+bool UCityMap::DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams) 
+{
+	FVector camLoc = World->GetFirstPlayerController()->PlayerCameraManager->GetCameraLocation();
+	FRotator rot = World->GetFirstPlayerController()->PlayerCameraManager->GetCameraRotation();
+
+	FVector start = camLoc;
+	FVector end = camLoc + (rot.Vector() * 100000);
+
+	//AActor* cam = (AActor*) World->GetFirstPlayerController()->PlayerCameraManager->GetActorClass();
+
+	//RV_TraceParams->AddIgnoredActor(cam);
+	RV_TraceParams->bTraceComplex = true;
+	RV_TraceParams->bTraceAsyncScene = true;
+	RV_TraceParams->bReturnPhysicalMaterial = true;
+
+	bool traced = World->LineTraceSingle(*RV_Hit, start, end, ECC_PhysicsBody, *RV_TraceParams);
+	
+	return traced;
+}
 
 // Called every frame
 void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
@@ -62,7 +81,28 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 	{
 		LastGrabPosition = VectorNull;
 	}
+
+	FHitResult HitCall(ForceInit);
+	FCollisionQueryParams ParamsCall = FCollisionQueryParams(true);
+	
+
+	if (DoTrace(&HitCall, &ParamsCall)) 
+	{
+		DrawDebugSphere(World, HitCall.ImpactPoint, 10, 10, FColor::Emerald );
 		
+
+		FVector diff = HitCall.ImpactPoint - HitCall.TraceStart;
+		diff.Normalize();
+
+		diff *= 10;
+
+		if (ZoomIn)
+			Translate(-diff);
+
+		if (ZoomOut)
+			Translate(diff);
+	}
+
 	// ...
 }
 
