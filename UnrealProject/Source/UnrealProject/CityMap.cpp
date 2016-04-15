@@ -17,9 +17,11 @@ UCityMap::UCityMap()
 
 void UCityMap::Translate(FVector direction)
 {
-	AActor* owner = GetOwner();
+    AddLocalOffset(direction);
+    //AActor* owner = GetOwner();
 
-	owner->FindComponentByClass<USceneComponent>()->AddLocalOffset(direction);
+    //owner->FindComponentByClass<UCityMap>()->AddLocalOffset(direction);
+
 	
 }
 
@@ -42,7 +44,9 @@ void UCityMap::BeginPlay()
 void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-	
+	AActor* owner = GetOwner();
+    //owner->FindComponentByClass<USceneComponent>();
+    //GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, owner->FindComponentByClass<USceneComponent>()->GetName());
 	if(CurrentGrabPosition != VectorNull)
 	{
 		if (LastGrabPosition == VectorNull)
