@@ -66,20 +66,40 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 	AActor* owner = GetOwner();
     //owner->FindComponentByClass<USceneComponent>();
     //GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, owner->FindComponentByClass<USceneComponent>()->GetName());
-	if(CurrentGrabPosition != VectorNull)
+	 
+	
+	
+	FHitResult HitCall1(ForceInit);
+	FCollisionQueryParams ParamsCall1 = FCollisionQueryParams(true);
+
+	
+
+	if (DoTrace(&HitCall1, &ParamsCall1))
 	{
-		if (LastGrabPosition == VectorNull)
-			LastGrabPosition = CurrentGrabPosition;
+		if (CurrentGrabPosition != VectorNull)
+		{
+			if (LastGrabPosition == VectorNull)
+				LastGrabPosition = CurrentGrabPosition;
+			else
+			{
+				//FVector diffCamera = HitCall1.ImpactPoint - HitCall1.TraceStart;
+
+				//HitCall1.ImpactPoint.
+				
+				//FVector::VectorPlaneProject(diffCamera,  )
+				
+				FVector diff = CurrentGrabPosition - LastGrabPosition;
+			
+				diff = GetRelativeTransform().TransformVector(diff);
+
+				diff.Z = 0;
+				Translate(diff*Speed);
+			}
+		}
 		else
 		{
-			FVector diff = CurrentGrabPosition - LastGrabPosition;
-			diff.Z = 0;
-			Translate(diff);
+			LastGrabPosition = VectorNull;
 		}
-	}
-	else
-	{
-		LastGrabPosition = VectorNull;
 	}
 
 	FHitResult HitCall(ForceInit);
