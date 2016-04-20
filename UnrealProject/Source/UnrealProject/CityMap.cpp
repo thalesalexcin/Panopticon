@@ -90,10 +90,12 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				
 				FVector diff = CurrentGrabPosition - LastGrabPosition;
 			
+				diff *= Speed;
+
 				diff = GetRelativeTransform().TransformVector(diff);
 
 				diff.Z = 0;
-				Translate(diff*Speed);
+				Translate(diff*DeltaTime);
 			}
 		}
 		else
