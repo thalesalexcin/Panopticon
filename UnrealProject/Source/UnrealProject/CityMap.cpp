@@ -17,12 +17,21 @@ UCityMap::UCityMap()
 
 void UCityMap::Translate(FVector direction)
 {
-    AddLocalOffset(direction);
+    //AddLocalOffset(direction);
     AActor* owner = GetOwner();
 
+	//AddRelativeLocation(direction);
 	owner->AddActorLocalOffset(direction);
-    //owner->FindComponentByClass<UCityMap>()->AddLocalOffset(direction);
 
+	//owner->AddActorWorldOffset(direction);
+	//owner->GetRootComponent()->AddLocalOffset(direction);
+    //owner->FindComponentByClass<UCityMap>()->AddLocalOffset(direction);
+	//GetRelativeTransform().AddToTranslation(direction);
+	//GetAttachParent()->AddWorldOffset(direction);
+	//GetAttachParent()->AddLocalOffset(direction);
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, owner->GetName());//city
+	//https://scontent.xx.fbcdn.net/v/t1.0-9/10931189_10209764776736563_277155181628152421_n.jpg?oh=d797ec3c29adaf9f4df6d0a6dd64f4dc&oe=579F8109->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, owner->GetRootComponent()->GetName());//root
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, GetRelativeTransform());//root
 	
 }
 
@@ -55,9 +64,9 @@ bool UCityMap::DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams
 	RV_TraceParams->bTraceAsyncScene = true;
 	RV_TraceParams->bReturnPhysicalMaterial = true;
 
-	//bool traced = World->LineTraceSingle(*RV_Hit, start, end, ECC_PhysicsBody, *RV_TraceParams);
+	bool traced = World->LineTraceSingle(*RV_Hit, start, end, ECC_PhysicsBody, *RV_TraceParams);
 	
-	return true;
+	return traced;
 }
 
 // Called every frame
@@ -86,9 +95,9 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				FVector diff = RightHandPosition - LastRightHandPosition;
 			
 				diff *= SpeedTranslation;
-				diff = GetRelativeTransform().TransformVector(diff);
+				//diff = GetRelativeTransform().TransformVector(diff);
 
-				//diff.Z = 0;
+				diff.Z = 0;
 				Translate(diff*DeltaTime);
 			}
 		}
@@ -111,12 +120,11 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				FVector vN = World->GetFirstPlayerController()->PlayerCameraManager->TransformComponent->GetForwardVector();
 
 
-				if(FVector::DotProduct(vN, cross) < 0)
+				if(FVector::DotProduct(vN, cross) > 0)
 					angle = -angle;
 
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("OK: %f"), angle));
-
-				AddRelativeRotation(FRotator(0, angle * SpeedRotation,0));
+				//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, GetName()); //city actor
+				AddLocalRotation(FRotator(0, angle * SpeedRotation * DeltaTime,0));
 			}
 
 		
