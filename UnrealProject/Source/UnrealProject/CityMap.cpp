@@ -96,8 +96,6 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 		{
 			if (LastRightHandPosition != VectorNull && LastLeftHandPosition != VectorNull) 
 			{
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("OK")));
-
 				FVector lastVector = LastRightHandPosition - LastLeftHandPosition;
 				FVector currentVector = RightHandPosition - LeftHandPosition;
 
@@ -106,18 +104,23 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 
 				float cos = FVector::DotProduct(lastVector, currentVector);
 				float angle = acosf(cos);
+			
+				
+				FVector cross = FVector::CrossProduct(lastVector, currentVector);
+				FVector vN = World->GetFirstPlayerController()->PlayerCameraManager->TransformComponent->GetForwardVector();
 
-				
-				
+
+				if(FVector::DotProduct(vN, cross) < 0)
+					angle = -angle;
+
+				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("OK: %f"), angle));
+
 				AddRelativeRotation(FRotator(0,0,angle));
 			}
 
 		
 			LastRightHandPosition = RightHandPosition;
 			LastLeftHandPosition = LeftHandPosition;
-
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("RightHandPosition: %f, %f, %f"), RightHandPosition.X, RightHandPosition.Y, RightHandPosition.Z));
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("LeftHandPosition: %f, %f, %f"), LeftHandPosition.X, LeftHandPosition.Y, LeftHandPosition.Z));
 		}
 		else 
 		{
