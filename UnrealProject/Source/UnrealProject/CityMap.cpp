@@ -18,8 +18,9 @@ UCityMap::UCityMap()
 void UCityMap::Translate(FVector direction)
 {
     AddLocalOffset(direction);
-    //AActor* owner = GetOwner();
+    AActor* owner = GetOwner();
 
+	owner->AddActorLocalOffset(direction);
     //owner->FindComponentByClass<UCityMap>()->AddLocalOffset(direction);
 
 	
@@ -115,7 +116,7 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 
 				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("OK: %f"), angle));
 
-				AddRelativeRotation(FRotator(0,0,angle));
+				AddRelativeRotation(FRotator(0, angle * SpeedRotation,0));
 			}
 
 		
