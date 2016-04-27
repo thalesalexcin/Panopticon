@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	848835168	zoom			\Default Work Unit\zoom	
+	1117531639	amb			\Default Work Unit\amb	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	848835168	Zoom			\Default Work Unit\Zoom	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	278607882	backround2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\backround2_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\zoom\backround2		46922544
+	278746244	backround1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\backround1_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\zoom\backround1		5821344
+

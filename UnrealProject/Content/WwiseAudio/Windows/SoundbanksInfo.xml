@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Pochat.Damien\Documents\Panopticon\UnrealProject\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4098060813" Language="SFX">
+			<ShortName>PanopticonSoundBank</ShortName>
+			<Path>PanopticonSoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1117531639" Name="amb"/>
+				<Event Id="848835168" Name="zoom"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="278607882" Language="SFX">
+					<ShortName>backround2.wav</ShortName>
+					<Path>SFX\backround2_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="278746244" Language="SFX">
+					<ShortName>backround1.wav</ShortName>
+					<Path>SFX\backround1_4B8CC0C5.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
