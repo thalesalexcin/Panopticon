@@ -15,23 +15,22 @@ class UNREALPROJECT_API UCityMap : public USceneComponent
 public:	
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	bool Up = false;
+	bool IsGrabingRightHand = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	bool Down = false;
+	bool IsGrabingLeftHand = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	bool Right = false;
+	bool IsPinchingRightHand = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	bool Left = false;
+	bool IsPinchingLeftHand = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	bool ZoomOut = false;
+	FVector LeftHandPosition = VectorNull;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	bool ZoomIn = false;
+	FVector RightHandPosition = VectorNull;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	FVector CurrentGrabPosition = VectorNull;
-
+	float SpeedTranslation = 100;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-	float Speed = 100;
+	float SpeedRotation = 100;
 
 	// Sets default values for this component's properties
 	UCityMap();
@@ -45,7 +44,8 @@ public:
 	void UCityMap::Translate(FVector direction);
 private:
 	FVector VectorNull = FVector(0,0,0);
-	FVector LastGrabPosition = VectorNull;
+	FVector LastRightHandPosition = VectorNull;
+	FVector LastLeftHandPosition = VectorNull;
 
 	bool DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams);
 };
