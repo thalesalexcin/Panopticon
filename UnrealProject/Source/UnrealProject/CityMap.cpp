@@ -54,9 +54,9 @@ bool UCityMap::DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams
 	RV_TraceParams->bTraceAsyncScene = true;
 	RV_TraceParams->bReturnPhysicalMaterial = true;
 
-	bool traced = World->LineTraceSingle(*RV_Hit, start, end, ECC_PhysicsBody, *RV_TraceParams);
+	//bool traced = World->LineTraceSingle(*RV_Hit, start, end, ECC_PhysicsBody, *RV_TraceParams);
 	
-	return traced;
+	return true;
 }
 
 // Called every frame
@@ -64,22 +64,16 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	AActor* owner = GetOwner();
-    //owner->FindComponentByClass<USceneComponent>();
-    //GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, owner->FindComponentByClass<USceneComponent>()->GetName());
-	 
-	
-	
+   
 	FHitResult HitCall1(ForceInit);
-	FCollisionQueryParams ParamsCall1 = FCollisionQueryParams(true);
+	FCollisionQueryParams ParamsCall1 = FCollisionQueryParams(true);	
 
-	
-
-	if (DoTrace(&HitCall1, &ParamsCall1))
+	//if (DoTrace(&HitCall1, &ParamsCall1))
 	{
-		if (CurrentGrabPosition != VectorNull)
+		if (IsGrabingRightHand && !IsGrabingLeftHand)
 		{
-			if (LastGrabPosition == VectorNull)
-				LastGrabPosition = CurrentGrabPosition;
+			if (LastRightHandPosition == VectorNull)
+				LastRightHandPosition = RightHandPosition;
 			else
 			{
 				//FVector diffCamera = HitCall1.ImpactPoint - HitCall1.TraceStart;
@@ -88,22 +82,50 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				
 				//FVector::VectorPlaneProject(diffCamera,  )
 				
-				FVector diff = CurrentGrabPosition - LastGrabPosition;
+				FVector diff = RightHandPosition - LastRightHandPosition;
 			
-				diff *= Speed;
-
+				diff *= SpeedTranslation;
 				diff = GetRelativeTransform().TransformVector(diff);
 
-				diff.Z = 0;
+				//diff.Z = 0;
 				Translate(diff*DeltaTime);
 			}
 		}
-		else
+
+		else if (IsGrabingRightHand && IsGrabingLeftHand) 
 		{
-			LastGrabPosition = VectorNull;
+			if (LastRightHandPosition != VectorNull && LastLeftHandPosition != VectorNull) 
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("OK")));
+
+				FVector lastVector = LastRightHandPosition - LastLeftHandPosition;
+				FVector currentVector = RightHandPosition - LeftHandPosition;
+
+				lastVector.Normalize();
+				currentVector.Normalize();
+
+				float cos = FVector::DotProduct(lastVector, currentVector);
+				float angle = acosf(cos);
+
+				
+				
+				AddRelativeRotation(FRotator(0,0,angle));
+			}
+
+		
+			LastRightHandPosition = RightHandPosition;
+			LastLeftHandPosition = LeftHandPosition;
+
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("RightHandPosition: %f, %f, %f"), RightHandPosition.X, RightHandPosition.Y, RightHandPosition.Z));
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("LeftHandPosition: %f, %f, %f"), LeftHandPosition.X, LeftHandPosition.Y, LeftHandPosition.Z));
+		}
+		else 
+		{
+			LastRightHandPosition = VectorNull;
+			LastLeftHandPosition = VectorNull;
 		}
 	}
-
+/*
 	FHitResult HitCall(ForceInit);
 	FCollisionQueryParams ParamsCall = FCollisionQueryParams(true);
 	
@@ -123,7 +145,7 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 
 		if (ZoomOut)
 			Translate(diff);
-	}
+	}*/
 
 	// ...
 }
