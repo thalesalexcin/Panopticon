@@ -78,7 +78,7 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 	FHitResult HitCall1(ForceInit);
 	FCollisionQueryParams ParamsCall1 = FCollisionQueryParams(true);	
 
-	//if (DoTrace(&HitCall1, &ParamsCall1))
+	bool traced = DoTrace(&HitCall1, &ParamsCall1);
 	{
 		if (IsGrabingRightHand && !IsGrabingLeftHand)
 		{
@@ -95,9 +95,13 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				FVector diff = RightHandPosition - LastRightHandPosition;
 			
 				diff *= SpeedTranslation;
+				//diff = GetAttachParent()->GetRelativeTransform().TransformVector(diff);
 				//diff = GetRelativeTransform().TransformVector(diff);
 
 				diff.Z = 0;
+				//GetAttachParent()->AddLocalOffset(diff*DeltaTime);
+
+				
 				Translate(diff*DeltaTime);
 			}
 		}
@@ -116,6 +120,29 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				float angle = acosf(cos);
 			
 				
+				float oldDist = FVector::Dist(LastRightHandPosition, LastLeftHandPosition);
+				float currentDist = FVector::Dist(RightHandPosition, LeftHandPosition);
+				float scale = currentDist - oldDist;
+
+				FVector scaleVector = FVector(scale, scale, scale) * DeltaTime * ScaleSpeed;
+
+
+				//pivot
+				//if (traced) {
+				//	//HitCall1.ImpactPoint
+				//	FVector pivot = GetAttachParent()->GetRelativeTransform().TransformPosition(HitCall1.ImpactPoint);
+				//	
+				//	FVector pivor2 = GetAttachParent()->GetOwner()->GetPivotOffset();
+				//	GetAttachParent()->GetOwner()->SetPivotOffset(pivot);
+
+				//	
+				//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("Pivot: %f, %f, %f"), pivot.X, pivot.Y, pivot.Z));
+				//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("pivor2: %f, %f, %f"), pivor2.X, pivor2.Y, pivor2.Z));
+
+				//}
+
+				GetAttachParent()->SetWorldScale3D(GetAttachParent()->RelativeScale3D + scaleVector);
+
 				FVector cross = FVector::CrossProduct(lastVector, currentVector);
 				FVector vN = World->GetFirstPlayerController()->PlayerCameraManager->TransformComponent->GetForwardVector();
 
