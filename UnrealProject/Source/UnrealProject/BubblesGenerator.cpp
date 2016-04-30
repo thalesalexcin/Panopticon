@@ -19,19 +19,26 @@ UBubblesGenerator::UBubblesGenerator()
 // Called when the game starts
 void UBubblesGenerator::BeginPlay()
 {
+
+
 	Super::BeginPlay();
 
+
+
+
+	/*
 	AActor* owner = GetOwner();
 
 	FVector origin;
 	FVector boxExtent;
 	owner->GetActorBounds(false, origin, boxExtent);
+	
 
 	_CellWidth = boxExtent.X * 2 / Column;
 	_CellHeigth = boxExtent.Y * 2 / Row;
 
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("Origin: %f, %f, %f"), origin.X, origin.Y, origin.Z));
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("CellWidth: %f CellHeight: %f"), _CellWidth, _CellHeigth));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("CellWidth: %f CellHeight: %f"), _CellWidth, _CellHeigth));*/
 	
 }
 
@@ -41,6 +48,69 @@ void UBubblesGenerator::TickComponent( float DeltaTime, ELevelTick TickType, FAc
 {
 	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
 
+	if (setCells)
+	{
+		//FVector boundsMax = Ground->GetLocalBounds;
+			//Ground->Bounds;
+		
+		_CellWidth = boundsMax.X * 2 / Column;
+		_CellHeigth = boundsMax.Y * 2 / Row;
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("CellWidth: %f CellHeight: %f"), _CellWidth, _CellHeigth));
+		cells = new FVector2D*[Column];
+
+
+		for (int i = 0; i < Column; i++)
+		{
+			cells[i] = new FVector2D[Row];
+		}
+
+		for (int i = 0; i < Column; i++)
+		{
+			for (int j = 0; j < Row; j++)
+			{
+				cells[i][j] = {(boundsMin.X + _CellWidth / 2 + i * _CellWidth + FMath::FRandRange(-(_CellWidth / (2 * Column) -_BubbleSize),(_CellWidth / (2 * Column) - _BubbleSize))),
+					(boundsMax.Y - _CellHeigth / 2 - j * _CellHeigth + FMath::FRandRange(-(_CellHeigth / (2 * Row) - _BubbleSize), (_CellHeigth / (2 * Row) - _BubbleSize)))};
+				FVector position;
+				position.X = cells[i][j].X;
+				position.Y = cells[i][j].Y;
+				position.Z = 0.0f;
+
+				FVector worldPos = Ground->GetComponentTransform().TransformPosition(position);
+
+
+				//DrawDebugSphere(World, worldPos, 100, 10, FColor::Green, true);
+
+				//GetWorld()->SpawnActor<Bubble>
+				/*if (bubble != NULL)
+				{
+
+				}*/
+				
+				//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("Cell[%d].X: %f Cell[%d].Y: %f"), i, cells[i][j].X, j, cells[i][j].Y));
+			}
+		}
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("CellSize.X: %f CellSize.Y: %f"), _CellWidth, _CellHeigth));
+		//_BubbleSize
+		//->getobj
+		//World->SpawnActor<UObject>(Bubble, FVector(0.f, 0.f, 300.f), FRotator::ZeroRotator);
+		//FVector2D* spawn = new FVector2D(FMath::RandRange(-Column, Column), FMath::RandRange(-Row, Row));
+		//cells[spawn.X][spawn.Y];
+
+
+
+		setCells = false;
+	}
+	
 	// ...
+}
+
+FVector UBubblesGenerator::getSpawnPos(int X, int Y)
+{
+	FVector position;
+	position.X = cells[X][Y].X;
+	position.Y = cells[X][Y].Y;
+	position.Z = 0.0f;
+
+	return position;
 }
 
