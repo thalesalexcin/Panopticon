@@ -17,22 +17,8 @@ UCityMap::UCityMap()
 
 void UCityMap::Translate(FVector direction)
 {
-    //AddLocalOffset(direction);
     AActor* owner = GetOwner();
-
-	//AddRelativeLocation(direction);
 	owner->AddActorLocalOffset(direction);
-
-	//owner->AddActorWorldOffset(direction);
-	//owner->GetRootComponent()->AddLocalOffset(direction);
-    //owner->FindComponentByClass<UCityMap>()->AddLocalOffset(direction);
-	//GetRelativeTransform().AddToTranslation(direction);
-	//GetAttachParent()->AddWorldOffset(direction);
-	//GetAttachParent()->AddLocalOffset(direction);
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, owner->GetName());//city
-	//https://scontent.xx.fbcdn.net/v/t1.0-9/10931189_10209764776736563_277155181628152421_n.jpg?oh=d797ec3c29adaf9f4df6d0a6dd64f4dc&oe=579F8109->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, owner->GetRootComponent()->GetName());//root
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, GetRelativeTransform());//root
-	
 }
 
 // Called when the game starts
@@ -72,6 +58,7 @@ bool UCityMap::DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams
 // Called every frame
 void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
+	
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	AActor* owner = GetOwner();
    
@@ -85,24 +72,10 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 			if (LastRightHandPosition == VectorNull)
 				LastRightHandPosition = RightHandPosition;
 			else
-			{
-				//FVector diffCamera = HitCall1.ImpactPoint - HitCall1.TraceStart;
-
-				//HitCall1.ImpactPoint.
-				
-				//FVector::VectorPlaneProject(diffCamera,  )
-				
+			{	
 				FVector diff = RightHandPosition - LastRightHandPosition;
-			
-				diff *= SpeedTranslation;
-				//diff = GetAttachParent()->GetRelativeTransform().TransformVector(diff);
-				//diff = GetRelativeTransform().TransformVector(diff);
-
 				diff.Z = 0;
-				//GetAttachParent()->AddLocalOffset(diff*DeltaTime);
-
-				
-				Translate(diff*DeltaTime);
+				Translate(diff*DeltaTime*SpeedTranslation);
 			}
 		}
 
@@ -164,28 +137,64 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 			LastLeftHandPosition = VectorNull;
 		}
 	}
-/*
-	FHitResult HitCall(ForceInit);
-	FCollisionQueryParams ParamsCall = FCollisionQueryParams(true);
-	
 
-	if (DoTrace(&HitCall, &ParamsCall)) 
+	//Rotation
 	{
-		DrawDebugSphere(World, HitCall.ImpactPoint, 10, 10, FColor::Emerald );
-		
+		float angle = 0;
+		if (RotateRight)
+			angle = 1;
+		if (RotateLeft)
+			angle = -1;
 
-		FVector diff = HitCall.ImpactPoint - HitCall.TraceStart;
-		diff.Normalize();
+		FRotator currentRotation = GetAttachParent()->RelativeRotation;
+		FRotator rotationOffset = FRotator(0, angle * SpeedRotation * DeltaTime, 0);
+		GetAttachParent()->SetRelativeRotation(currentRotation + rotationOffset);
+	}
 
-		diff *= 10;
-
+	//Scale
+	{
+		float scale = 0;
 		if (ZoomIn)
-			Translate(-diff);
-
+			scale = 1;
 		if (ZoomOut)
-			Translate(diff);
-	}*/
+			scale = -1;
 
-	// ...
+		FVector currentScale = GetAttachParent()->RelativeScale3D;
+		FVector scaleVector = FVector(scale, scale, scale) * DeltaTime * ScaleSpeed;
+		GetAttachParent()->SetWorldScale3D(currentScale + scaleVector);
+	}
+
+	//Pivot
+	{
+		FVector localPoint = GetComponentTransform().InverseTransformPosition(HitCall1.ImpactPoint);
+		FVector currentChildPosition = -GetRelativeTransform().TransformPosition(FVector::ZeroVector);
+		FVector currentParentPosition = GetAttachParent()->GetRelativeTransform().TransformPosition(FVector::ZeroVector);
+		FVector newChildPosition = localPoint;
+
+		FVector displacement = newChildPosition - currentChildPosition;
+		FVector parentDisplacement = GetAttachParent()->GetRelativeTransform().TransformVector(displacement);
+
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("localPoint: %f, %f, %f"), localPoint.X, localPoint.Y, localPoint.Z));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("currentChildPosition: %f, %f, %f"), currentChildPosition.X, currentChildPosition.Y, currentChildPosition.Z));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("displacement: %f, %f, %f"), -displacement.X, -displacement.Y, -displacement.Z));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("parentDisplacement: %f, %f, %f"), parentDisplacement.X, parentDisplacement.Y, parentDisplacement.Z));
+
+		if (SetPivot && !SetPivotFlag)
+		{
+			SetPivotFlag = true;
+			AddLocalOffset(-displacement);
+			GetAttachParent()->AddLocalOffset(parentDisplacement);
+		}
+
+		if (!SetPivot && SetPivotFlag)
+			SetPivotFlag = false;
+
+		FVector pivotPoint = GetAttachParent()->GetComponentTransform().TransformPosition(FVector::ZeroVector);
+		DrawDebugSphere(World, pivotPoint, 10, 10, FColor::Red);
+	}
+
+	//Raytrace
+	if(traced)
+		DrawDebugSphere(World, HitCall1.ImpactPoint, 10, 10, FColor::Emerald);
 }
 

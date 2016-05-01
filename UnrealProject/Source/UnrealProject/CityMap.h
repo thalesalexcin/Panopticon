@@ -13,6 +13,17 @@ class UNREALPROJECT_API UCityMap : public USceneComponent
 	GENERATED_BODY()
 
 public:	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool RotateRight = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool RotateLeft = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool ZoomIn = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool ZoomOut = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	bool SetPivot = false;
+	bool SetPivotFlag = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	bool IsGrabingRightHand = false;
