@@ -61,6 +61,8 @@ Build/*
 DerivedDataCache/*
 
 /UnrealProject/UnrealProject.VC.opendb
+/UnrealProject/UnrealProject.VC.db
+/UnrealProject/UnrealProject.VC.VC.opendb
 
 #Plugins
 /UnrealProject/Plugins

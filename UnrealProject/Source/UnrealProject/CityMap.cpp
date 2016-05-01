@@ -99,34 +99,18 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 
 				FVector scaleVector = FVector(scale, scale, scale) * DeltaTime * ScaleSpeed;
 
-
-				//pivot
-				//if (traced) {
-				//	//HitCall1.ImpactPoint
-				//	FVector pivot = GetAttachParent()->GetRelativeTransform().TransformPosition(HitCall1.ImpactPoint);
-				//	
-				//	FVector pivor2 = GetAttachParent()->GetOwner()->GetPivotOffset();
-				//	GetAttachParent()->GetOwner()->SetPivotOffset(pivot);
-
-				//	
-				//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("Pivot: %f, %f, %f"), pivot.X, pivot.Y, pivot.Z));
-				//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("pivor2: %f, %f, %f"), pivor2.X, pivor2.Y, pivor2.Z));
-
-				//}
-
 				GetAttachParent()->SetWorldScale3D(GetAttachParent()->RelativeScale3D + scaleVector);
 
 				FVector cross = FVector::CrossProduct(lastVector, currentVector);
 				FVector vN = World->GetFirstPlayerController()->PlayerCameraManager->TransformComponent->GetForwardVector();
 
-
 				if(FVector::DotProduct(vN, cross) > 0)
 					angle = -angle;
 
-				//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, GetName()); //city actor
-				AddLocalRotation(FRotator(0, angle * SpeedRotation * DeltaTime,0));
+				FRotator currentRotation = GetAttachParent()->RelativeRotation;
+				FRotator rotationOffset = FRotator(0, angle * SpeedRotation * DeltaTime, 0);
+				GetAttachParent()->SetRelativeRotation(currentRotation + rotationOffset);
 			}
-
 		
 			LastRightHandPosition = RightHandPosition;
 			LastLeftHandPosition = LeftHandPosition;
@@ -167,23 +151,16 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 	//Pivot
 	{
 		FVector localPoint = GetComponentTransform().InverseTransformPosition(HitCall1.ImpactPoint);
-		FVector currentChildPosition = -GetRelativeTransform().TransformPosition(FVector::ZeroVector);
-		FVector currentParentPosition = GetAttachParent()->GetRelativeTransform().TransformPosition(FVector::ZeroVector);
-		FVector newChildPosition = localPoint;
-
-		FVector displacement = newChildPosition - currentChildPosition;
-		FVector parentDisplacement = GetAttachParent()->GetRelativeTransform().TransformVector(displacement);
-
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("localPoint: %f, %f, %f"), localPoint.X, localPoint.Y, localPoint.Z));
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("currentChildPosition: %f, %f, %f"), currentChildPosition.X, currentChildPosition.Y, currentChildPosition.Z));
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("displacement: %f, %f, %f"), -displacement.X, -displacement.Y, -displacement.Z));
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("parentDisplacement: %f, %f, %f"), parentDisplacement.X, parentDisplacement.Y, parentDisplacement.Z));
+		FVector parentPoint = GetRelativeTransform().TransformPosition(localPoint);				
+		
+		FVector parentDisplacement = GetAttachParent()->GetRelativeTransform().TransformPosition(parentPoint);
+		FVector displacement = localPoint;
 
 		if (SetPivot && !SetPivotFlag)
 		{
 			SetPivotFlag = true;
-			AddLocalOffset(-displacement);
-			GetAttachParent()->AddLocalOffset(parentDisplacement);
+			SetRelativeLocation(-displacement);
+			GetAttachParent()->SetRelativeLocation(parentDisplacement);
 		}
 
 		if (!SetPivot && SetPivotFlag)
