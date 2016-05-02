@@ -44,6 +44,14 @@ public:
 	float SpeedRotation = 100;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float ScaleSpeed = 100;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float MaxScale = 5;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float MinScale = 0.5f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float MaxY = 1000;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float MaxX = 1000;
 
 	// Sets default values for this component's properties
 	UCityMap();
