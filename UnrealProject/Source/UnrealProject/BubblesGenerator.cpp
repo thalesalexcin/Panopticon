@@ -73,7 +73,7 @@ void UBubblesGenerator::TickComponent( float DeltaTime, ELevelTick TickType, FAc
 				FVector position;
 				position.X = cells[i][j].X;
 				position.Y = cells[i][j].Y;
-				position.Z = 0.0f;
+				position.Z = 100.0f;
 
 				FVector worldPos = Ground->GetComponentTransform().TransformPosition(position);
 
@@ -89,7 +89,7 @@ void UBubblesGenerator::TickComponent( float DeltaTime, ELevelTick TickType, FAc
 				//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("Cell[%d].X: %f Cell[%d].Y: %f"), i, cells[i][j].X, j, cells[i][j].Y));
 			}
 		}
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("CellSize.X: %f CellSize.Y: %f"), _CellWidth, _CellHeigth));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("CellSize.X: %f CellSize.Y: %f"), _CellWidth, _CellHeigth));
 		//_BubbleSize
 		//->getobj
 		//World->SpawnActor<UObject>(Bubble, FVector(0.f, 0.f, 300.f), FRotator::ZeroRotator);
