@@ -44,9 +44,6 @@ bool UCityMap::DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams
 	FVector start = camLoc;
 	FVector end = camLoc + (rot.Vector() * 100000);
 
-	//AActor* cam = (AActor*) World->GetFirstPlayerController()->PlayerCameraManager->GetActorClass();
-
-	//RV_TraceParams->AddIgnoredActor(cam);
 	RV_TraceParams->bTraceComplex = true;
 	RV_TraceParams->bTraceAsyncScene = true;
 	RV_TraceParams->bReturnPhysicalMaterial = true;
@@ -71,15 +68,28 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 	{
 		if (IsGrabingRightHand && !IsGrabingLeftHand)
 		{
-			if (LastRightHandPosition == VectorNull)
-				LastRightHandPosition = RightHandPosition;
-			else
+			if(LastRightHandPosition != VectorNull)
 			{	
 				FVector diff = RightHandPosition - LastRightHandPosition;
 				diff = GetAttachParent()->GetAttachParent()->GetComponentTransform().InverseTransformVector(diff);
 				diff.Z = 0;
 				GetAttachParent()->GetAttachParent()->AddLocalOffset(diff * SpeedTranslation * DeltaTime);
 			}
+
+			LastRightHandPosition = RightHandPosition;
+		}
+
+		else if (!IsGrabingRightHand && IsGrabingLeftHand)
+		{
+			if (LastLeftHandPosition != VectorNull)
+			{
+				FVector diff = LeftHandPosition - LastLeftHandPosition;
+				diff = GetAttachParent()->GetAttachParent()->GetComponentTransform().InverseTransformVector(diff);
+				diff.Z = 0;
+				GetAttachParent()->GetAttachParent()->AddLocalOffset(diff * SpeedTranslation * DeltaTime);
+			}
+
+			LastLeftHandPosition = LeftHandPosition;
 		}
 
 		else if (IsGrabingRightHand && IsGrabingLeftHand) 
