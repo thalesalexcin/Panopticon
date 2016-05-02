@@ -68,5 +68,7 @@ private:
 	FVector LastRightHandPosition = VectorNull;
 	FVector LastLeftHandPosition = VectorNull;
 
+	float _InitialDistance = 0;
+
 	bool DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams);
 };
