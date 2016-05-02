@@ -17,8 +17,9 @@ UCityMap::UCityMap()
 
 void UCityMap::Translate(FVector direction)
 {
-    AActor* owner = GetOwner();
-	owner->AddActorLocalOffset(direction);
+    
+
+	
 }
 
 // Called when the game starts
@@ -66,6 +67,7 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 	FCollisionQueryParams ParamsCall1 = FCollisionQueryParams(true);	
 
 	bool traced = DoTrace(&HitCall1, &ParamsCall1);
+
 	{
 		if (IsGrabingRightHand && !IsGrabingLeftHand)
 		{
@@ -74,13 +76,28 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 			else
 			{	
 				FVector diff = RightHandPosition - LastRightHandPosition;
+				diff = GetAttachParent()->GetAttachParent()->GetComponentTransform().InverseTransformVector(diff);
 				diff.Z = 0;
-				Translate(diff*DeltaTime*SpeedTranslation);
+				GetAttachParent()->GetAttachParent()->AddLocalOffset(diff * SpeedTranslation * DeltaTime);
 			}
 		}
 
 		else if (IsGrabingRightHand && IsGrabingLeftHand) 
 		{
+			//Pivot
+			if(!SetPivotFlag && traced)
+			{
+				FVector localPoint = GetComponentTransform().InverseTransformPosition(HitCall1.ImpactPoint);
+				FVector parentPoint = GetRelativeTransform().TransformPosition(localPoint);
+
+				FVector parentDisplacement = GetAttachParent()->GetRelativeTransform().TransformPosition(parentPoint);
+				FVector displacement = localPoint;
+
+				SetPivotFlag = true;
+				SetRelativeLocation(-displacement);
+				GetAttachParent()->SetRelativeLocation(parentDisplacement);
+			}
+
 			if (LastRightHandPosition != VectorNull && LastLeftHandPosition != VectorNull) 
 			{
 				FVector lastVector = LastRightHandPosition - LastLeftHandPosition;
@@ -97,9 +114,16 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				float currentDist = FVector::Dist(RightHandPosition, LeftHandPosition);
 				float scale = currentDist - oldDist;
 
-				FVector scaleVector = FVector(scale, scale, scale) * DeltaTime * ScaleSpeed;
+				FVector currentScale = GetAttachParent()->RelativeScale3D;
+				FVector scaleVector = currentScale + FVector(scale, scale, scale) * DeltaTime * ScaleSpeed;
 
-				GetAttachParent()->SetWorldScale3D(GetAttachParent()->RelativeScale3D + scaleVector);
+				if(scaleVector.X > MaxScale)
+					scaleVector = FVector(MaxScale, MaxScale, MaxScale);
+
+				if(scaleVector.X < MinScale)
+					scaleVector = FVector(MinScale, MinScale, MinScale);
+
+				GetAttachParent()->SetWorldScale3D(scaleVector);
 
 				FVector cross = FVector::CrossProduct(lastVector, currentVector);
 				FVector vN = World->GetFirstPlayerController()->PlayerCameraManager->TransformComponent->GetForwardVector();
@@ -117,6 +141,7 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 		}
 		else 
 		{
+			SetPivotFlag = false;
 			LastRightHandPosition = VectorNull;
 			LastLeftHandPosition = VectorNull;
 		}
@@ -148,30 +173,11 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 		GetAttachParent()->SetWorldScale3D(currentScale + scaleVector);
 	}
 
-	//Pivot
-	{
-		FVector localPoint = GetComponentTransform().InverseTransformPosition(HitCall1.ImpactPoint);
-		FVector parentPoint = GetRelativeTransform().TransformPosition(localPoint);				
-		
-		FVector parentDisplacement = GetAttachParent()->GetRelativeTransform().TransformPosition(parentPoint);
-		FVector displacement = localPoint;
-
-		if (SetPivot && !SetPivotFlag)
-		{
-			SetPivotFlag = true;
-			SetRelativeLocation(-displacement);
-			GetAttachParent()->SetRelativeLocation(parentDisplacement);
-		}
-
-		if (!SetPivot && SetPivotFlag)
-			SetPivotFlag = false;
-
-		FVector pivotPoint = GetAttachParent()->GetComponentTransform().TransformPosition(FVector::ZeroVector);
-		DrawDebugSphere(World, pivotPoint, 10, 10, FColor::Red);
-	}
-
 	//Raytrace
 	if(traced)
 		DrawDebugSphere(World, HitCall1.ImpactPoint, 10, 10, FColor::Emerald);
+
+	FVector pivotPoint = GetAttachParent()->GetComponentTransform().TransformPosition(FVector::ZeroVector);
+	DrawDebugSphere(World, pivotPoint, 10, 10, FColor::Red);
 }
 
