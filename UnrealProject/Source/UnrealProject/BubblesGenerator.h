@@ -1,10 +1,28 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#pragma once
-
 #include "Components/ActorComponent.h"
 #include "BubblesGenerator.generated.h"
 
+UENUM(BlueprintType, Category = "Generation")
+enum class EBubbleType
+{
+	Meteorology = 0 UMETA(DisplayName = "Meteorology"),
+	Politics = 1 UMETA(DisplayName = "Politics"),
+	Love = 2 UMETA(DisplayName = "Love"),
+	Money = 3 UMETA(DisplayName = "Money")
+};
+
+USTRUCT(BlueprintType, Category = "Generation")
+struct FBubbleWeight
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Generation")
+	TEnumAsByte<EBubbleType> BubbleType;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Generation")
+	uint8 Weight;
+};
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class UNREALPROJECT_API UBubblesGenerator : public UActorComponent
@@ -37,6 +55,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Generation")
 	FVector getSpawnPos(int X, int Y);
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Generation")
+	TArray<FBubbleWeight> BubbleWeights;
 
 	// Sets default values for this component's properties
 	UBubblesGenerator();
