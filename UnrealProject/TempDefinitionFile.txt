@@ -1,1 +1,4 @@
-PanopticonSoundBank	"amb"
+PanopticonSoundBank	"EV_MainAmb"
+PanopticonSoundBank	"EV_Grow"
+PanopticonSoundBank	"EV_amb"
+PanopticonSoundBank	"EV_zoom"

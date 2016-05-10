@@ -1,11 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
-	848835168	zoom			\Default Work Unit\zoom	
-	1117531639	amb			\Default Work Unit\amb	
+	889440257	EV_amb			\Default Work Unit\EV_amb	
+	897691200	EV_MainAmb			\Default Work Unit\EV_MainAmb	
+	2144662678	EV_zoom			\Default Work Unit\EV_zoom	
+	2772018542	EV_Grow			\Default Work Unit\EV_Grow	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	671634148	Grow			\Default Work Unit\Grow	
 	848835168	Zoom			\Default Work Unit\Zoom	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	95676111	Grow	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\growing_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\Grow		904012
 	278607882	backround2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\backround2_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\zoom\backround2		46922544
 	278746244	backround1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\backround1_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\zoom\backround1		5821344
+	616393013	Main Amb	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\MainAmb_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Amb		6967764
 

@@ -19,10 +19,16 @@
 			<ShortName>PanopticonSoundBank</ShortName>
 			<Path>PanopticonSoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1117531639" Name="amb"/>
-				<Event Id="848835168" Name="zoom"/>
+				<Event Id="889440257" Name="EV_amb"/>
+				<Event Id="2772018542" Name="EV_Grow"/>
+				<Event Id="897691200" Name="EV_MainAmb"/>
+				<Event Id="2144662678" Name="EV_zoom"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="95676111" Language="SFX">
+					<ShortName>growing.wav</ShortName>
+					<Path>SFX\growing_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="278607882" Language="SFX">
 					<ShortName>backround2.wav</ShortName>
 					<Path>SFX\backround2_4B8CC0C5.wem</Path>
@@ -30,6 +36,10 @@
 				<File Id="278746244" Language="SFX">
 					<ShortName>backround1.wav</ShortName>
 					<Path>SFX\backround1_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="616393013" Language="SFX">
+					<ShortName>MainAmb.wav</ShortName>
+					<Path>SFX\MainAmb_4B8CC0C5.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
