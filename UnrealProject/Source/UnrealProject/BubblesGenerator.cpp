@@ -27,7 +27,7 @@ void UBubblesGenerator::BeginPlay()
 void UBubblesGenerator::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
 	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
-
+	/*
 	if (setCells)
 	{
 		_CellWidth = boundsMax.X * 2 / Column;
@@ -46,7 +46,7 @@ void UBubblesGenerator::TickComponent( float DeltaTime, ELevelTick TickType, FAc
 			}
 		}
 		setCells = false;
-	}
+	}*/
 	
 	// ...
 }
@@ -60,4 +60,34 @@ FVector UBubblesGenerator::getSpawnPos(int X, int Y)
 
 	return position;
 }
+void UBubblesGenerator::init()
+{
+	_CellWidth = boundsMax.X * 2 / Column;
+	_CellHeigth = boundsMax.Y * 2 / Row;
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("CellWidth: %f CellHeight: %f"), _CellWidth, _CellHeigth));
+	cells = new FVector2D*[Column];
+	for (int i = 0; i < Column; i++)
+	{
+		cells[i] = new FVector2D[Row];
+	}
+	for (int i = 0; i < Column; i++)
+	{
+		for (int j = 0; j < Row; j++)
+		{
+			cells[i][j] = { (boundsMin.X + _CellWidth / 2 + i * _CellWidth), (boundsMax.Y - _CellHeigth / 2 - j * _CellHeigth) };
+		}
+	}
+	// set typeWeightedList
+	int index = 0;
+	int weightsSize = BubbleWeights.Num();
+	int SumBubbleWeights = 0;
 
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("weightsSize: %f"), weightsSize));
+	//for (int i = 0; i < weightsSize; i++)
+}
+/*
+EBubbleType UBubblesGenerator::getPicto()
+{
+	//random dans la liste
+
+}*/

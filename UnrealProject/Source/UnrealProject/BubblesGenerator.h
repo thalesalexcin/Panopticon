@@ -58,6 +58,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Generation")
 	TArray<FBubbleWeight> BubbleWeights;
 
+	UFUNCTION(BlueprintCallable, Category = "Generation")
+	void init();
+
+	//UFUNCTION(BlueprintCallable, Category = "Generation")
+	//EBubbleType getPicto();
+
 	// Sets default values for this component's properties
 	UBubblesGenerator();
 
@@ -72,4 +78,6 @@ private:
 	float _CellWidth;
 	float _CellHeigth;
 	FVector2D** cells;
+	EBubbleType* typeWeightedList;
+
 };
