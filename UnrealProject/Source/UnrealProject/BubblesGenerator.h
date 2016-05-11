@@ -59,8 +59,8 @@ public:
 	TArray<FBubbleWeight> BubbleWeights;
 
 
-	//UFUNCTION(BlueprintCallable, Category = "Generation")
-	//EBubbleType getPicto();
+	UFUNCTION(BlueprintCallable, Category = "Generation")
+	EBubbleType getPicto();
 
 	// Sets default values for this component's properties
 	UBubblesGenerator();
@@ -77,5 +77,6 @@ private:
 	float _CellHeigth;
 	FVector2D** cells;
 	EBubbleType* typeWeightedList;
+	int SumBubbleWeights = 0;
 
 };
