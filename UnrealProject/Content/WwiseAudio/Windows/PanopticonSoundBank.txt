@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	119859153	EV_Birds			\Default Work Unit\EV_Birds	
 	889440257	EV_amb			\Default Work Unit\EV_amb	
 	897691200	EV_MainAmb			\Default Work Unit\EV_MainAmb	
+	1937558708	EV_Selection1			\Default Work Unit\EV_Selection1	
 	2144662678	EV_zoom			\Default Work Unit\EV_zoom	
 	2772018542	EV_Grow			\Default Work Unit\EV_Grow	
 
@@ -18,5 +19,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	616393013	Main Amb	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\MainAmb_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Amb		6967764
 	826098019	Birds5	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Birds\Birds5		8555544
 	846172224	Birds1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Birds\Birds1		5468544
+	923226415	Selection1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Selection1		749844
 	930414140	Birds4	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Birds\Birds4		6019792
 
