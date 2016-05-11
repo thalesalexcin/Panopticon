@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	119859153	EV_Birds			\Default Work Unit\EV_Birds	
 	889440257	EV_amb			\Default Work Unit\EV_amb	
 	897691200	EV_MainAmb			\Default Work Unit\EV_MainAmb	
 	2144662678	EV_zoom			\Default Work Unit\EV_zoom	
@@ -10,7 +11,12 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	95676111	Grow	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\growing_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\Grow		904012
+	140018853	Birds2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Birds\Birds2		5644944
 	278607882	backround2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\backround2_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\zoom\backround2		46922544
 	278746244	backround1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\backround1_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\zoom\backround1		5821344
+	525251758	Birds3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Birds\Birds3		6174144
 	616393013	Main Amb	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\MainAmb_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main Amb		6967764
+	826098019	Birds5	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Birds\Birds5		8555544
+	846172224	Birds1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Birds\Birds1		5468544
+	930414140	Birds4	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Birds\Birds4		6019792
 

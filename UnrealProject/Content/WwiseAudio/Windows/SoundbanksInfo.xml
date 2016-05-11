@@ -20,6 +20,7 @@
 			<Path>PanopticonSoundBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="889440257" Name="EV_amb"/>
+				<Event Id="119859153" Name="EV_Birds"/>
 				<Event Id="2772018542" Name="EV_Grow"/>
 				<Event Id="897691200" Name="EV_MainAmb"/>
 				<Event Id="2144662678" Name="EV_zoom"/>
@@ -29,6 +30,10 @@
 					<ShortName>growing.wav</ShortName>
 					<Path>SFX\growing_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="140018853" Language="SFX">
+					<ShortName>Birds2.wav</ShortName>
+					<Path>SFX\Birds2_9E69E797.wem</Path>
+				</File>
 				<File Id="278607882" Language="SFX">
 					<ShortName>backround2.wav</ShortName>
 					<Path>SFX\backround2_4B8CC0C5.wem</Path>
@@ -37,9 +42,25 @@
 					<ShortName>backround1.wav</ShortName>
 					<Path>SFX\backround1_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="525251758" Language="SFX">
+					<ShortName>Birds3.wav</ShortName>
+					<Path>SFX\Birds3_9E69E797.wem</Path>
+				</File>
 				<File Id="616393013" Language="SFX">
 					<ShortName>MainAmb.wav</ShortName>
 					<Path>SFX\MainAmb_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="826098019" Language="SFX">
+					<ShortName>Birds5.wav</ShortName>
+					<Path>SFX\Birds5_9E69E797.wem</Path>
+				</File>
+				<File Id="846172224" Language="SFX">
+					<ShortName>Birds1.wav</ShortName>
+					<Path>SFX\Birds1_9E69E797.wem</Path>
+				</File>
+				<File Id="930414140" Language="SFX">
+					<ShortName>Birds4.wav</ShortName>
+					<Path>SFX\Birds4_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
