@@ -58,8 +58,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Generation")
 	TArray<FBubbleWeight> BubbleWeights;
 
-	UFUNCTION(BlueprintCallable, Category = "Generation")
-	void init();
 
 	//UFUNCTION(BlueprintCallable, Category = "Generation")
 	//EBubbleType getPicto();
