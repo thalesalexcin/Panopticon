@@ -27,7 +27,7 @@ void UBubblesGenerator::BeginPlay()
 void UBubblesGenerator::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
 	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
-
+	// INIT
 	if (setCells)
 	{
 		_CellWidth = boundsMax.X * 2 / Column;
@@ -46,6 +46,13 @@ void UBubblesGenerator::TickComponent( float DeltaTime, ELevelTick TickType, FAc
 			}
 		}
 		setCells = false;
+
+		int index = 0;
+		int weightsSize = BubbleWeights.Num();
+		int SumBubbleWeights = 0;
+
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("weightsSize: %d"), weightsSize));
+		//for (int i = 0; i < weightsSize; i++)
 	}
 	
 	// ...
@@ -61,3 +68,9 @@ FVector UBubblesGenerator::getSpawnPos(int X, int Y)
 	return position;
 }
 
+/*
+EBubbleType UBubblesGenerator::getPicto()
+{
+	//random dans la liste
+
+}*/
