@@ -66,3 +66,6 @@ DerivedDataCache/*
 
 #Plugins
 /UnrealProject/Plugins
+
+
+/local
