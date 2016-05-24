@@ -87,5 +87,9 @@ EBubbleType UBubblesGenerator::getPicto()
 	//random dans la liste typeWeightedList
 	int randomIndex = FMath::RandRange(0, SumBubbleWeights);
 	EBubbleType randomType = typeWeightedList[randomIndex];
+	//int size = typeWeightedList.Num();
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("SumBubbleWeights type: %d"), SumBubbleWeights));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("typeWeightedList size type: %d"), typeWeightedList.Num()));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("index InfoBubble type: %d"), randomIndex));
 	return randomType;
 }
