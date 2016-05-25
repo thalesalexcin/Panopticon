@@ -23,10 +23,15 @@
 				<Event Id="119859153" Name="EV_Birds"/>
 				<Event Id="2772018542" Name="EV_Grow"/>
 				<Event Id="897691200" Name="EV_MainAmb"/>
-				<Event Id="1937558708" Name="EV_Selection1"/>
+				<Event Id="4105256245" Name="EV_RightGrab"/>
+				<Event Id="1937558711" Name="EV_Selection2"/>
 				<Event Id="2144662678" Name="EV_zoom"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="69517136" Language="SFX">
+					<ShortName>Selection3.wav</ShortName>
+					<Path>SFX\Selection3_9E69E797.wem</Path>
+				</File>
 				<File Id="95676111" Language="SFX">
 					<ShortName>growing.wav</ShortName>
 					<Path>SFX\growing_4B8CC0C5.wem</Path>
@@ -42,6 +47,10 @@
 				<File Id="278746244" Language="SFX">
 					<ShortName>backround1.wav</ShortName>
 					<Path>SFX\backround1_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="426538846" Language="SFX">
+					<ShortName>Selection2.wav</ShortName>
+					<Path>SFX\Selection2_9E69E797.wem</Path>
 				</File>
 				<File Id="525251758" Language="SFX">
 					<ShortName>Birds3.wav</ShortName>
