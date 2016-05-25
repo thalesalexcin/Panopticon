@@ -48,7 +48,7 @@ bool UCityMap::DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams
 	RV_TraceParams->bTraceAsyncScene = true;
 	RV_TraceParams->bReturnPhysicalMaterial = true;
 
-	bool traced = World->LineTraceSingle(*RV_Hit, start, end, ECC_PhysicsBody, *RV_TraceParams);
+	bool traced = World->LineTraceSingle(*RV_Hit, start, end, ECC_GameTraceChannel1, *RV_TraceParams);
 	
 	return traced;
 }
