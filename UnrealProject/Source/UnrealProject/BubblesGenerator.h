@@ -6,14 +6,24 @@
 UENUM(BlueprintType, Category = "Generation")
 enum class EBubbleType
 {
-	Animals =		0 UMETA(DisplayName = "Animals"),
-	Food =			1 UMETA(DisplayName = "Food"),
-	Games =			2 UMETA(DisplayName = "Games"),
-	Meteorology =	3 UMETA(DisplayName = "Meteorology"),
-	Money =			4 UMETA(DisplayName = "Money"),
-	Puzzle =		5 UMETA(DisplayName = "Puzzle"),
-	Recycle =		6 UMETA(DisplayName = "Recycle"),
-	Studys =		7 UMETA(DisplayName = "Studys")
+	Alien =			0 UMETA(DisplayName = "Alien"),
+	Animals =		1 UMETA(DisplayName = "Animals"),
+	Fashion =		2 UMETA(DisplayName = "Fashion"),
+	Food =			3 UMETA(DisplayName = "Food"),
+	Games =			4 UMETA(DisplayName = "Games"),
+	Genius =		5 UMETA(DisplayName = "Genius"),
+	Health =		6 UMETA(DisplayName = "Health"),
+	Jail =			7 UMETA(DisplayName = "Jail"),
+	Meteorology =	8 UMETA(DisplayName = "Meteorology"),
+	Money =			9 UMETA(DisplayName = "Money"),
+	Music =			10 UMETA(DisplayName = "Music"),
+	Politics =		11 UMETA(DisplayName = "Politics"),
+	Puzzle =		12 UMETA(DisplayName = "Puzzle"),
+	Recycle =		13 UMETA(DisplayName = "Recycle"),
+	Sport =			14 UMETA(DisplayName = "Sport"),
+	Studys =		15 UMETA(DisplayName = "Studys"),
+	Travel =		16 UMETA(DisplayName = "Travel"),
+	Work =			17 UMETA(DisplayName = "Work")
 };
 
 USTRUCT(BlueprintType, Category = "Generation")
