@@ -30,6 +30,7 @@ void UBubblesGenerator::TickComponent( float DeltaTime, ELevelTick TickType, FAc
 	// INIT
 	if (setCells)
 	{
+		//GRID
 		_CellWidth = boundsMax.X * 2 / Column;
 		_CellHeigth = boundsMax.Y * 2 / Row;
 		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("CellWidth: %f CellHeight: %f"), _CellWidth, _CellHeigth));
@@ -46,13 +47,25 @@ void UBubblesGenerator::TickComponent( float DeltaTime, ELevelTick TickType, FAc
 			}
 		}
 		setCells = false;
+		//BUBBLE WEIGHTED ARRAY
+		int weightsSize = BubbleWeights.Num() - 1;
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("weightsSize: %d"), BubbleWeights[0].Weight));
 
-		int index = 0;
-		int weightsSize = BubbleWeights.Num();
-		int SumBubbleWeights = 0;
+		for (int i = 0; i < weightsSize; i++)
+			SumBubbleWeights += BubbleWeights[i].Weight;
 
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("SumBubbleWeights: %d"), SumBubbleWeights));
 		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Emerald, FString::Printf(TEXT("weightsSize: %d"), weightsSize));
-		//for (int i = 0; i < weightsSize; i++)
+		typeWeightedList = new EBubbleType[SumBubbleWeights];
+		int index = 0;
+		for (int i = 0; i < weightsSize; i++)
+		{
+			for (int j = 0; j < BubbleWeights[i].Weight; j++)
+			{
+				typeWeightedList[index] = BubbleWeights[i].BubbleType;
+				index++;
+			}
+		}
 	}
 	
 	// ...
@@ -68,9 +81,11 @@ FVector UBubblesGenerator::getSpawnPos(int X, int Y)
 	return position;
 }
 
-/*
+
 EBubbleType UBubblesGenerator::getPicto()
 {
-	//random dans la liste
-
-}*/
+	//random dans la liste typeWeightedList
+	int randomIndex = FMath::RandRange(0, SumBubbleWeights-1);
+	EBubbleType randomType = typeWeightedList[randomIndex];
+	return randomType;
+}

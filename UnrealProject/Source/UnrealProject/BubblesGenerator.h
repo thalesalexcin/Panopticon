@@ -6,10 +6,24 @@
 UENUM(BlueprintType, Category = "Generation")
 enum class EBubbleType
 {
-	Meteorology = 0 UMETA(DisplayName = "Meteorology"),
-	Politics = 1 UMETA(DisplayName = "Politics"),
-	Love = 2 UMETA(DisplayName = "Love"),
-	Money = 3 UMETA(DisplayName = "Money")
+	Alien =			0 UMETA(DisplayName = "Alien"),
+	Animals =		1 UMETA(DisplayName = "Animals"),
+	Fashion =		2 UMETA(DisplayName = "Fashion"),
+	Food =			3 UMETA(DisplayName = "Food"),
+	Games =			4 UMETA(DisplayName = "Games"),
+	Genius =		5 UMETA(DisplayName = "Genius"),
+	Health =		6 UMETA(DisplayName = "Health"),
+	Jail =			7 UMETA(DisplayName = "Jail"),
+	Meteorology =	8 UMETA(DisplayName = "Meteorology"),
+	Money =			9 UMETA(DisplayName = "Money"),
+	Music =			10 UMETA(DisplayName = "Music"),
+	Politics =		11 UMETA(DisplayName = "Politics"),
+	Puzzle =		12 UMETA(DisplayName = "Puzzle"),
+	Recycle =		13 UMETA(DisplayName = "Recycle"),
+	Sport =			14 UMETA(DisplayName = "Sport"),
+	Studys =		15 UMETA(DisplayName = "Studys"),
+	Travel =		16 UMETA(DisplayName = "Travel"),
+	Work =			17 UMETA(DisplayName = "Work")
 };
 
 USTRUCT(BlueprintType, Category = "Generation")
@@ -59,8 +73,8 @@ public:
 	TArray<FBubbleWeight> BubbleWeights;
 
 
-	//UFUNCTION(BlueprintCallable, Category = "Generation")
-	//EBubbleType getPicto();
+	UFUNCTION(BlueprintCallable, Category = "Generation")
+	EBubbleType getPicto();
 
 	// Sets default values for this component's properties
 	UBubblesGenerator();
@@ -77,5 +91,6 @@ private:
 	float _CellHeigth;
 	FVector2D** cells;
 	EBubbleType* typeWeightedList;
+	int SumBubbleWeights = 0;
 
 };
