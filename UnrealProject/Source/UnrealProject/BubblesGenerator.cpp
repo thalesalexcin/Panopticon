@@ -85,7 +85,7 @@ FVector UBubblesGenerator::getSpawnPos(int X, int Y)
 EBubbleType UBubblesGenerator::getPicto()
 {
 	//random dans la liste typeWeightedList
-	int randomIndex = FMath::RandRange(0, SumBubbleWeights);
+	int randomIndex = FMath::RandRange(0, SumBubbleWeights-1);
 	EBubbleType randomType = typeWeightedList[randomIndex];
 	return randomType;
 }
