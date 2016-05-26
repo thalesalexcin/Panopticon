@@ -62,7 +62,7 @@ public:
 	// Called every frame
 	virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
 
-	void UCityMap::Translate(FVector direction);
+	void UCityMap::Translate(FVector direction, float deltaTime);
 private:
 	FVector VectorNull = FVector(0,0,0);
 	FVector LastRightHandPosition = VectorNull;
