@@ -21,7 +21,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	42907215	Wind4	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind4		1411344
 	44193769	Wind2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind2		1411344
 	69517136	Selection3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Selection2\Selection3		705744
-	95676111	Grow	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\growing_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\Grow		904012
+	95676111	Grow	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\growing_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWNING POP\Grow		904012
 	110739623	AmbFar1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbFar1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbFar\AmbFar1		2822544
 	140018853	Birds2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds2		5644944
 	147505433	Panopticon	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Panopticon_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Panopticon		1411344
@@ -32,7 +32,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	384003615	AmbClose3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbClose3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbClose\AmbClose3		3748644
 	426538846	Selection2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Selection2\Selection2		705744
 	460658693	WarningMineur2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\WarningMineur2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Warning\WARNING\WarningMineur\WarningMineur2		1411164
-	489010490	PoP - copie	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PoP - copie_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\PoP - copie		705564
+	489010490	Pooop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PoP - copie_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWNING POP\Pooop		705564
 	525251758	Birds3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds3		6174144
 	631869147	Wind1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind1		1411344
 	742193860	AmbClose2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbClose2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbClose\AmbClose2		3880944
