@@ -19,15 +19,31 @@
 			<ShortName>PanopticonSoundBank</ShortName>
 			<Path>PanopticonSoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="889440257" Name="EV_amb"/>
+				<Event Id="2842601371" Name="EV_Ambiance"/>
 				<Event Id="119859153" Name="EV_Birds"/>
 				<Event Id="2772018542" Name="EV_Grow"/>
-				<Event Id="897691200" Name="EV_MainAmb"/>
+				<Event Id="3524210750" Name="EV_LeftGrab"/>
+				<Event Id="920479680" Name="EV_Pop"/>
 				<Event Id="4105256245" Name="EV_RightGrab"/>
 				<Event Id="1937558711" Name="EV_Selection2"/>
-				<Event Id="2144662678" Name="EV_zoom"/>
+				<Event Id="3812724549" Name="EV_Warning"/>
+				<Event Id="4172254477" Name="EV_Wind"/>
+				<Event Id="2877597234" Name="Panopticon"/>
+				<Event Id="1281810935" Name="Start"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="2798134" Language="SFX">
+					<ShortName>AmbMiddle1.wav</ShortName>
+					<Path>SFX\AmbMiddle1_9E69E797.wem</Path>
+				</File>
+				<File Id="42907215" Language="SFX">
+					<ShortName>Wind4.wav</ShortName>
+					<Path>SFX\Wind4_9E69E797.wem</Path>
+				</File>
+				<File Id="44193769" Language="SFX">
+					<ShortName>Wind2.wav</ShortName>
+					<Path>SFX\Wind2_9E69E797.wem</Path>
+				</File>
 				<File Id="69517136" Language="SFX">
 					<ShortName>Selection3.wav</ShortName>
 					<Path>SFX\Selection3_9E69E797.wem</Path>
@@ -36,29 +52,73 @@
 					<ShortName>growing.wav</ShortName>
 					<Path>SFX\growing_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="110739623" Language="SFX">
+					<ShortName>AmbFar1.wav</ShortName>
+					<Path>SFX\AmbFar1_9E69E797.wem</Path>
+				</File>
 				<File Id="140018853" Language="SFX">
 					<ShortName>Birds2.wav</ShortName>
 					<Path>SFX\Birds2_9E69E797.wem</Path>
 				</File>
-				<File Id="278607882" Language="SFX">
-					<ShortName>backround2.wav</ShortName>
-					<Path>SFX\backround2_4B8CC0C5.wem</Path>
+				<File Id="147505433" Language="SFX">
+					<ShortName>Panopticon.wav</ShortName>
+					<Path>SFX\Panopticon_9E69E797.wem</Path>
 				</File>
-				<File Id="278746244" Language="SFX">
-					<ShortName>backround1.wav</ShortName>
-					<Path>SFX\backround1_4B8CC0C5.wem</Path>
+				<File Id="172808180" Language="SFX">
+					<ShortName>WarningMineur.wav</ShortName>
+					<Path>SFX\WarningMineur_9E69E797.wem</Path>
+				</File>
+				<File Id="235729790" Language="SFX">
+					<ShortName>Wind5.wav</ShortName>
+					<Path>SFX\Wind5_9E69E797.wem</Path>
+				</File>
+				<File Id="245814124" Language="SFX">
+					<ShortName>AmbFar2.wav</ShortName>
+					<Path>SFX\AmbFar2_9E69E797.wem</Path>
+				</File>
+				<File Id="246415081" Language="SFX">
+					<ShortName>StartHolograme.wav</ShortName>
+					<Path>SFX\StartHolograme_9E69E797.wem</Path>
+				</File>
+				<File Id="384003615" Language="SFX">
+					<ShortName>AmbClose3.wav</ShortName>
+					<Path>SFX\AmbClose3_9E69E797.wem</Path>
 				</File>
 				<File Id="426538846" Language="SFX">
 					<ShortName>Selection2.wav</ShortName>
 					<Path>SFX\Selection2_9E69E797.wem</Path>
 				</File>
+				<File Id="460658693" Language="SFX">
+					<ShortName>WarningMineur2.wav</ShortName>
+					<Path>SFX\WarningMineur2_9E69E797.wem</Path>
+				</File>
+				<File Id="489010490" Language="SFX">
+					<ShortName>PoP - copie.wav</ShortName>
+					<Path>SFX\PoP - copie_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="525251758" Language="SFX">
 					<ShortName>Birds3.wav</ShortName>
 					<Path>SFX\Birds3_9E69E797.wem</Path>
 				</File>
-				<File Id="616393013" Language="SFX">
-					<ShortName>MainAmb.wav</ShortName>
-					<Path>SFX\MainAmb_4B8CC0C5.wem</Path>
+				<File Id="631869147" Language="SFX">
+					<ShortName>Wind1.wav</ShortName>
+					<Path>SFX\Wind1_9E69E797.wem</Path>
+				</File>
+				<File Id="742193860" Language="SFX">
+					<ShortName>AmbClose2.wav</ShortName>
+					<Path>SFX\AmbClose2_9E69E797.wem</Path>
+				</File>
+				<File Id="746810667" Language="SFX">
+					<ShortName>WarningMajeur2.wav</ShortName>
+					<Path>SFX\WarningMajeur2_9E69E797.wem</Path>
+				</File>
+				<File Id="753460977" Language="SFX">
+					<ShortName>WarningMajeur1.wav</ShortName>
+					<Path>SFX\WarningMajeur1_9E69E797.wem</Path>
+				</File>
+				<File Id="799002650" Language="SFX">
+					<ShortName>AmbFar3.wav</ShortName>
+					<Path>SFX\AmbFar3_9E69E797.wem</Path>
 				</File>
 				<File Id="826098019" Language="SFX">
 					<ShortName>Birds5.wav</ShortName>
@@ -75,6 +135,30 @@
 				<File Id="930414140" Language="SFX">
 					<ShortName>Birds4.wav</ShortName>
 					<Path>SFX\Birds4_9E69E797.wem</Path>
+				</File>
+				<File Id="973341240" Language="SFX">
+					<ShortName>Nappe.wav</ShortName>
+					<Path>SFX\Nappe_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="976983258" Language="SFX">
+					<ShortName>AmbMiddle3.wav</ShortName>
+					<Path>SFX\AmbMiddle3_9E69E797.wem</Path>
+				</File>
+				<File Id="1011419357" Language="SFX">
+					<ShortName>Wind6.wav</ShortName>
+					<Path>SFX\Wind6_9E69E797.wem</Path>
+				</File>
+				<File Id="1017950140" Language="SFX">
+					<ShortName>Wind3.wav</ShortName>
+					<Path>SFX\Wind3_9E69E797.wem</Path>
+				</File>
+				<File Id="1046467624" Language="SFX">
+					<ShortName>AmbClose1.wav</ShortName>
+					<Path>SFX\AmbClose1_9E69E797.wem</Path>
+				</File>
+				<File Id="1065872233" Language="SFX">
+					<ShortName>AmbMiddle2.wav</ShortName>
+					<Path>SFX\AmbMiddle2_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
