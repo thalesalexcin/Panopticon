@@ -15,11 +15,11 @@ UCityMap::UCityMap()
 	// ...
 }
 
-void UCityMap::Translate(FVector direction)
+void UCityMap::Translate(FVector diff, float deltaTime)
 {
-    
-
-	
+	diff = GetAttachParent()->GetAttachParent()->GetComponentTransform().InverseTransformVector(diff);
+	diff.Z = 0;
+	GetAttachParent()->GetAttachParent()->AddLocalOffset(diff * SpeedTranslation * deltaTime);
 }
 
 // Called when the game starts
@@ -69,12 +69,7 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 		if (IsGrabingRightHand && !IsGrabingLeftHand)
 		{
 			if(LastRightHandPosition != VectorNull)
-			{	
-				FVector diff = RightHandPosition - LastRightHandPosition;
-				diff = GetAttachParent()->GetAttachParent()->GetComponentTransform().InverseTransformVector(diff);
-				diff.Z = 0;
-				GetAttachParent()->GetAttachParent()->AddLocalOffset(diff * SpeedTranslation * DeltaTime);
-			}
+				Translate(RightHandPosition - LastRightHandPosition, DeltaTime);
 
 			LastRightHandPosition = RightHandPosition;
 		}
@@ -82,12 +77,7 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 		else if (!IsGrabingRightHand && IsGrabingLeftHand)
 		{
 			if (LastLeftHandPosition != VectorNull)
-			{
-				FVector diff = LeftHandPosition - LastLeftHandPosition;
-				diff = GetAttachParent()->GetAttachParent()->GetComponentTransform().InverseTransformVector(diff);
-				diff.Z = 0;
-				GetAttachParent()->GetAttachParent()->AddLocalOffset(diff * SpeedTranslation * DeltaTime);
-			}
+				Translate(LeftHandPosition - LastLeftHandPosition, DeltaTime);
 
 			LastLeftHandPosition = LeftHandPosition;
 		}
