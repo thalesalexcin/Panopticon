@@ -24,6 +24,11 @@
 				<Event Id="2772018542" Name="EV_Grow"/>
 				<Event Id="3524210750" Name="EV_LeftGrab"/>
 				<Event Id="920479680" Name="EV_Pop"/>
+				<Event Id="238576133" Name="EV_PopAlien"/>
+				<Event Id="3847764492" Name="EV_PopCooking"/>
+				<Event Id="3337614530" Name="EV_PopFishing"/>
+				<Event Id="1757312268" Name="EV_PopMoney"/>
+				<Event Id="2676848790" Name="EV_PopPlane"/>
 				<Event Id="3668260911" Name="EV_PopStudy"/>
 				<Event Id="4105256245" Name="EV_RightGrab"/>
 				<Event Id="1937558711" Name="EV_Selection2"/>
@@ -48,6 +53,10 @@
 				<File Id="69517136" Language="SFX">
 					<ShortName>Selection3.wav</ShortName>
 					<Path>SFX\Selection3_9E69E797.wem</Path>
+				</File>
+				<File Id="73242123" Language="SFX">
+					<ShortName>PopPlane.wav</ShortName>
+					<Path>SFX\PopPlane_9E69E797.wem</Path>
 				</File>
 				<File Id="95676111" Language="SFX">
 					<ShortName>growing.wav</ShortName>
@@ -89,6 +98,10 @@
 					<ShortName>AmbClose3.wav</ShortName>
 					<Path>SFX\AmbClose3_9E69E797.wem</Path>
 				</File>
+				<File Id="408797171" Language="SFX">
+					<ShortName>PopAlien.wav</ShortName>
+					<Path>SFX\PopAlien_9E69E797.wem</Path>
+				</File>
 				<File Id="409154721" Language="SFX">
 					<ShortName>poptest.wav</ShortName>
 					<Path>SFX\poptest_9E69E797.wem</Path>
@@ -109,9 +122,17 @@
 					<ShortName>Wind1.wav</ShortName>
 					<Path>SFX\Wind1_9E69E797.wem</Path>
 				</File>
+				<File Id="666328814" Language="SFX">
+					<ShortName>PopFishing.wav</ShortName>
+					<Path>SFX\PopFishing_9E69E797.wem</Path>
+				</File>
 				<File Id="742193860" Language="SFX">
 					<ShortName>AmbClose2.wav</ShortName>
 					<Path>SFX\AmbClose2_9E69E797.wem</Path>
+				</File>
+				<File Id="744560602" Language="SFX">
+					<ShortName>PopCooking.wav</ShortName>
+					<Path>SFX\PopCooking_9E69E797.wem</Path>
 				</File>
 				<File Id="746810667" Language="SFX">
 					<ShortName>WarningMajeur2.wav</ShortName>
@@ -120,6 +141,10 @@
 				<File Id="753460977" Language="SFX">
 					<ShortName>WarningMajeur1.wav</ShortName>
 					<Path>SFX\WarningMajeur1_9E69E797.wem</Path>
+				</File>
+				<File Id="784351153" Language="SFX">
+					<ShortName>PopMoney.wav</ShortName>
+					<Path>SFX\PopMoney_9E69E797.wem</Path>
 				</File>
 				<File Id="799002650" Language="SFX">
 					<ShortName>AmbFar3.wav</ShortName>
