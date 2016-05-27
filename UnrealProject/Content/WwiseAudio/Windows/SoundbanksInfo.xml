@@ -24,6 +24,7 @@
 				<Event Id="2772018542" Name="EV_Grow"/>
 				<Event Id="3524210750" Name="EV_LeftGrab"/>
 				<Event Id="920479680" Name="EV_Pop"/>
+				<Event Id="3668260911" Name="EV_PopStudy"/>
 				<Event Id="4105256245" Name="EV_RightGrab"/>
 				<Event Id="1937558711" Name="EV_Selection2"/>
 				<Event Id="3812724549" Name="EV_Warning"/>
@@ -79,6 +80,10 @@
 				<File Id="246415081" Language="SFX">
 					<ShortName>StartHolograme.wav</ShortName>
 					<Path>SFX\StartHolograme_9E69E797.wem</Path>
+				</File>
+				<File Id="352355510" Language="SFX">
+					<ShortName>PopStudy.wav</ShortName>
+					<Path>SFX\PopStudy_9E69E797.wem</Path>
 				</File>
 				<File Id="384003615" Language="SFX">
 					<ShortName>AmbClose3.wav</ShortName>

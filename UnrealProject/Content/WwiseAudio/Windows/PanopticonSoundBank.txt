@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2842601371	EV_Ambiance			\Default Work Unit\EV_Ambiance	
 	2877597234	Panopticon			\Default Work Unit\Panopticon	
 	3524210750	EV_LeftGrab			\Default Work Unit\EV_Selection\EV_LeftGrab	
+	3668260911	EV_PopStudy			\Default Work Unit\EV_PopStudy	
 	3812724549	EV_Warning			\Default Work Unit\EV_Warning	
 	4105256245	EV_RightGrab			\Default Work Unit\EV_Selection\EV_RightGrab	
 	4172254477	EV_Wind			\Default Work Unit\EV_Wind	
@@ -21,7 +22,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	42907215	Wind4	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind4		1411344
 	44193769	Wind2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind2		1411344
 	69517136	Selection3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Selection2\Selection3		705744
-	95676111	Grow	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\growing_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWNING POP\Grow		904012
+	95676111	Grow	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\growing_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\PopStduy\Grow		904012
 	110739623	AmbFar1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbFar1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbFar\AmbFar1		2822544
 	140018853	Birds2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds2		5644944
 	147505433	Panopticon	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Panopticon_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Panopticon		1411344
@@ -29,8 +30,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	235729790	Wind5	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind5		1411344
 	245814124	AmbFar2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbFar2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbFar\AmbFar2		2822544
 	246415081	Start	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\StartHolograme_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Start		2381364
+	352355510	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopStudy_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\PopStduy\Pop		705564
 	384003615	AmbClose3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbClose3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbClose\AmbClose3		3748644
-	409154721	Pooop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\poptest_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWNING POP\Pooop		705564
+	409154721	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\poptest_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\PopMain\Pop		705564
 	426538846	Selection2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Selection2\Selection2		705744
 	460658693	WarningMineur2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\WarningMineur2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Warning\WARNING\WarningMineur\WarningMineur2		1411164
 	525251758	Birds3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds3		6174144
