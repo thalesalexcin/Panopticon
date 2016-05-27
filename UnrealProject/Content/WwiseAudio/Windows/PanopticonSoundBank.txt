@@ -30,9 +30,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	245814124	AmbFar2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbFar2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbFar\AmbFar2		2822544
 	246415081	Start	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\StartHolograme_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Start		2381364
 	384003615	AmbClose3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbClose3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbClose\AmbClose3		3748644
+	409154721	Pooop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\poptest_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWNING POP\Pooop		705564
 	426538846	Selection2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Selection2\Selection2		705744
 	460658693	WarningMineur2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\WarningMineur2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Warning\WARNING\WarningMineur\WarningMineur2		1411164
-	489010490	Pooop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PoP - copie_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWNING POP\Pooop		705564
 	525251758	Birds3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds3		6174144
 	631869147	Wind1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind1		1411344
 	742193860	AmbClose2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbClose2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbClose\AmbClose2		3880944

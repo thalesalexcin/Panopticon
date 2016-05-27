@@ -84,6 +84,10 @@
 					<ShortName>AmbClose3.wav</ShortName>
 					<Path>SFX\AmbClose3_9E69E797.wem</Path>
 				</File>
+				<File Id="409154721" Language="SFX">
+					<ShortName>poptest.wav</ShortName>
+					<Path>SFX\poptest_9E69E797.wem</Path>
+				</File>
 				<File Id="426538846" Language="SFX">
 					<ShortName>Selection2.wav</ShortName>
 					<Path>SFX\Selection2_9E69E797.wem</Path>
@@ -91,10 +95,6 @@
 				<File Id="460658693" Language="SFX">
 					<ShortName>WarningMineur2.wav</ShortName>
 					<Path>SFX\WarningMineur2_9E69E797.wem</Path>
-				</File>
-				<File Id="489010490" Language="SFX">
-					<ShortName>PoP - copie.wav</ShortName>
-					<Path>SFX\PoP - copie_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="525251758" Language="SFX">
 					<ShortName>Birds3.wav</ShortName>
