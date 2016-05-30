@@ -97,11 +97,15 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				SetRelativeLocation(-displacement);
 				GetAttachParent()->SetRelativeLocation(parentDisplacement);
 			}
-
+			//Scale Rotation
 			if (LastRightHandPosition != VectorNull && LastLeftHandPosition != VectorNull) 
 			{
 				FVector lastVector = LastRightHandPosition - LastLeftHandPosition;
 				FVector currentVector = RightHandPosition - LeftHandPosition;
+
+				float firstDistance = FVector::Dist(FirstLeftHandPos, FirstRightHandPos);
+				float currentDistance = currentVector.Size();
+				WindForce = InitialWindForce + currentDistance - firstDistance;
 
 				lastVector.Normalize();
 				currentVector.Normalize();
@@ -135,7 +139,13 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				FRotator rotationOffset = FRotator(0, angle * SpeedRotation * DeltaTime, 0);
 				GetAttachParent()->SetRelativeRotation(currentRotation + rotationOffset);
 			}
-		
+
+			if (FirstLeftHandPos == VectorNull || FirstRightHandPos == VectorNull)
+			{
+				FirstLeftHandPos = LeftHandPosition;
+				FirstRightHandPos = RightHandPosition;
+			}
+
 			LastRightHandPosition = RightHandPosition;
 			LastLeftHandPosition = LeftHandPosition;
 		}
@@ -144,10 +154,12 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 			SetPivotFlag = false;
 			LastRightHandPosition = VectorNull;
 			LastLeftHandPosition = VectorNull;
+			FirstRightHandPos = VectorNull;
+			FirstLeftHandPos = VectorNull;
 		}
 	}
 
-	//Rotation
+	//Rotation Keyboard
 	{
 		float angle = 0;
 		if (RotateRight)
@@ -160,7 +172,7 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 		GetAttachParent()->SetRelativeRotation(currentRotation + rotationOffset);
 	}
 
-	//Scale
+	//Scale Keyboard
 	{
 		float scale = 0;
 		if (ZoomIn)
