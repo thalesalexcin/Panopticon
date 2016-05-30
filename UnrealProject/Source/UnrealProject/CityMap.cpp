@@ -98,16 +98,14 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				GetAttachParent()->SetRelativeLocation(parentDisplacement);
 			}
 			//Scale Rotation
-			if (FirstLeftHandPos == VectorNull || FirstRightHandPos == VectorNull) 
-			{
-				FirstLeftHandPos = LeftHandPosition;
-				FirstRightHandPos = RightHandPosition;
-			}
-
 			if (LastRightHandPosition != VectorNull && LastLeftHandPosition != VectorNull) 
 			{
 				FVector lastVector = LastRightHandPosition - LastLeftHandPosition;
 				FVector currentVector = RightHandPosition - LeftHandPosition;
+
+				float firstDistance = FVector::Dist(FirstLeftHandPos, FirstRightHandPos);
+				float currentDistance = currentVector.Size();
+				WindForce = InitialWindForce + currentDistance - firstDistance;
 
 				lastVector.Normalize();
 				currentVector.Normalize();
@@ -141,7 +139,13 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				FRotator rotationOffset = FRotator(0, angle * SpeedRotation * DeltaTime, 0);
 				GetAttachParent()->SetRelativeRotation(currentRotation + rotationOffset);
 			}
-		
+
+			if (FirstLeftHandPos == VectorNull || FirstRightHandPos == VectorNull)
+			{
+				FirstLeftHandPos = LeftHandPosition;
+				FirstRightHandPos = RightHandPosition;
+			}
+
 			LastRightHandPosition = RightHandPosition;
 			LastLeftHandPosition = LeftHandPosition;
 		}
