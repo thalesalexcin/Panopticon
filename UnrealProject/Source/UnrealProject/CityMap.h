@@ -37,6 +37,13 @@ public:
 	FVector LeftHandPosition = VectorNull;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	FVector RightHandPosition = VectorNull;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	FVector FirstRightHandPos;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	FVector FirstLeftHandPos;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	float WindForce;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float SpeedTranslation = 100;

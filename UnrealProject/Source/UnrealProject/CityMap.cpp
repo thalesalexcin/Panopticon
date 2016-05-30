@@ -97,6 +97,12 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 				SetRelativeLocation(-displacement);
 				GetAttachParent()->SetRelativeLocation(parentDisplacement);
 			}
+			//Scale Rotation
+			if (FirstLeftHandPos == VectorNull || FirstRightHandPos == VectorNull) 
+			{
+				FirstLeftHandPos = LeftHandPosition;
+				FirstRightHandPos = RightHandPosition;
+			}
 
 			if (LastRightHandPosition != VectorNull && LastLeftHandPosition != VectorNull) 
 			{
@@ -144,10 +150,12 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 			SetPivotFlag = false;
 			LastRightHandPosition = VectorNull;
 			LastLeftHandPosition = VectorNull;
+			FirstRightHandPos = VectorNull;
+			FirstLeftHandPos = VectorNull;
 		}
 	}
 
-	//Rotation
+	//Rotation Keyboard
 	{
 		float angle = 0;
 		if (RotateRight)
@@ -160,7 +168,7 @@ void UCityMap::TickComponent( float DeltaTime, ELevelTick TickType, FActorCompon
 		GetAttachParent()->SetRelativeRotation(currentRotation + rotationOffset);
 	}
 
-	//Scale
+	//Scale Keyboard
 	{
 		float scale = 0;
 		if (ZoomIn)
