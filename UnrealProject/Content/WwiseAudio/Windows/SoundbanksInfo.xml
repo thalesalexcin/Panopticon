@@ -45,6 +45,8 @@
 				<Event Id="4105256245" Name="EV_RightGrab"/>
 				<Event Id="1937558711" Name="EV_Selection2"/>
 				<Event Id="3812724549" Name="EV_Warning"/>
+				<Event Id="1757588415" Name="EV_WarningPlay"/>
+				<Event Id="1290270173" Name="EV_WarningStop"/>
 				<Event Id="950254951" Name="EV_WindPlay"/>
 				<Event Id="3938887349" Name="EV_WindStop"/>
 				<Event Id="2877597234" Name="Panopticon"/>
