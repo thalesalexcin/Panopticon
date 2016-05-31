@@ -21,6 +21,8 @@
 			<IncludedEvents>
 				<Event Id="2842601371" Name="EV_Ambiance"/>
 				<Event Id="119859153" Name="EV_Birds"/>
+				<Event Id="615245659" Name="EV_ConfirmationSuspectF"/>
+				<Event Id="615245641" Name="EV_ConfirmationSuspectT"/>
 				<Event Id="2772018542" Name="EV_Grow"/>
 				<Event Id="3524210750" Name="EV_LeftGrab"/>
 				<Event Id="920479680" Name="EV_Pop"/>
@@ -41,12 +43,16 @@
 				<Event Id="675278654" Name="EV_PopSport"/>
 				<Event Id="3668260911" Name="EV_PopStudy"/>
 				<Event Id="497504363" Name="EV_PopVideoGame"/>
+				<Event Id="3427338642" Name="EV_PopWarningPlay"/>
+				<Event Id="843928844" Name="EV_PopWarningStop"/>
 				<Event Id="756731615" Name="EV_PopWork"/>
+				<Event Id="1254162402" Name="EV_PopWW"/>
 				<Event Id="4105256245" Name="EV_RightGrab"/>
 				<Event Id="1937558711" Name="EV_Selection2"/>
+				<Event Id="3844712552" Name="EV_SelectionSuspectF"/>
+				<Event Id="3844712570" Name="EV_SelectionSuspectT"/>
 				<Event Id="3812724549" Name="EV_Warning"/>
-				<Event Id="1757588415" Name="EV_WarningPlay"/>
-				<Event Id="1290270173" Name="EV_WarningStop"/>
+				<Event Id="3309461680" Name="EV_WarningEye"/>
 				<Event Id="950254951" Name="EV_WindPlay"/>
 				<Event Id="3938887349" Name="EV_WindStop"/>
 				<Event Id="2877597234" Name="Panopticon"/>
@@ -68,6 +74,10 @@
 				<File Id="44193769" Language="SFX">
 					<ShortName>Wind2.wav</ShortName>
 					<Path>SFX\Wind2_8FCC05A6.wem</Path>
+				</File>
+				<File Id="50000724" Language="SFX">
+					<ShortName>Eye2.wav</ShortName>
+					<Path>SFX\Eye2_8FCC05A6.wem</Path>
 				</File>
 				<File Id="69517136" Language="SFX">
 					<ShortName>Selection3.wav</ShortName>
@@ -121,6 +131,10 @@
 					<ShortName>PopStudy.wav</ShortName>
 					<Path>SFX\PopStudy_8FCC05A6.wem</Path>
 				</File>
+				<File Id="382528859" Language="SFX">
+					<ShortName>Eye1.wav</ShortName>
+					<Path>SFX\Eye1_8FCC05A6.wem</Path>
+				</File>
 				<File Id="384003615" Language="SFX">
 					<ShortName>AmbClose3.wav</ShortName>
 					<Path>SFX\AmbClose3_8FCC05A6.wem</Path>
@@ -149,6 +163,10 @@
 					<ShortName>PopAnimal.wav</ShortName>
 					<Path>SFX\PopAnimal_8FCC05A6.wem</Path>
 				</File>
+				<File Id="513121370" Language="SFX">
+					<ShortName>Eye3.wav</ShortName>
+					<Path>SFX\Eye3_8FCC05A6.wem</Path>
+				</File>
 				<File Id="525251758" Language="SFX">
 					<ShortName>Birds3.wav</ShortName>
 					<Path>SFX\Birds3_8FCC05A6.wem</Path>
@@ -161,13 +179,25 @@
 					<ShortName>PopPrison.wav</ShortName>
 					<Path>SFX\PopPrison_8FCC05A6.wem</Path>
 				</File>
+				<File Id="631814388" Language="SFX">
+					<ShortName>SelectionSuspect.wav</ShortName>
+					<Path>SFX\SelectionSuspect_8FCC05A6.wem</Path>
+				</File>
 				<File Id="631869147" Language="SFX">
 					<ShortName>Wind1.wav</ShortName>
 					<Path>SFX\Wind1_8FCC05A6.wem</Path>
 				</File>
+				<File Id="659211384" Language="SFX">
+					<ShortName>GrowWarning.wav</ShortName>
+					<Path>SFX\GrowWarning_F8DCC980.wem</Path>
+				</File>
 				<File Id="675534784" Language="SFX">
 					<ShortName>PopMode.wav</ShortName>
 					<Path>SFX\PopMode_8FCC05A6.wem</Path>
+				</File>
+				<File Id="695400244" Language="SFX">
+					<ShortName>PopWarning.wav</ShortName>
+					<Path>SFX\PopWarning_8FCC05A6.wem</Path>
 				</File>
 				<File Id="733032831" Language="SFX">
 					<ShortName>PopMusic.wav</ShortName>
@@ -204,6 +234,10 @@
 				<File Id="846172224" Language="SFX">
 					<ShortName>Birds1.wav</ShortName>
 					<Path>SFX\Birds1_8FCC05A6.wem</Path>
+				</File>
+				<File Id="870275962" Language="SFX">
+					<ShortName>ConfirmationSuspect.wav</ShortName>
+					<Path>SFX\ConfirmationSuspect_8FCC05A6.wem</Path>
 				</File>
 				<File Id="923226415" Language="SFX">
 					<ShortName>Selection1.wav</ShortName>
