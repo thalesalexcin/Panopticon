@@ -43,7 +43,7 @@
 				<Event Id="675278654" Name="EV_PopSport" MaxAttenuation="150.000000"/>
 				<Event Id="3668260911" Name="EV_PopStudy" MaxAttenuation="150.000000"/>
 				<Event Id="497504363" Name="EV_PopVideoGame" MaxAttenuation="150.000000"/>
-				<Event Id="3427338642" Name="EV_PopWarningPlay" MaxAttenuation="400.000000"/>
+				<Event Id="3427338642" Name="EV_PopWarningPlay" MaxAttenuation="600.000000"/>
 				<Event Id="843928844" Name="EV_PopWarningStop" MaxAttenuation="0.000000"/>
 				<Event Id="756731615" Name="EV_PopWork" MaxAttenuation="150.000000"/>
 				<Event Id="1254162402" Name="EV_PopWW"/>
@@ -51,7 +51,7 @@
 				<Event Id="1937558711" Name="EV_Selection2"/>
 				<Event Id="3844712552" Name="EV_SelectionSuspectF"/>
 				<Event Id="3844712570" Name="EV_SelectionSuspectT"/>
-				<Event Id="3812724549" Name="EV_Warning" MaxAttenuation="400.000000"/>
+				<Event Id="3812724549" Name="EV_Warning" MaxAttenuation="600.000000"/>
 				<Event Id="3309461680" Name="EV_WarningEye" MaxAttenuation="20000.000000"/>
 				<Event Id="950254951" Name="EV_WindPlay"/>
 				<Event Id="3938887349" Name="EV_WindStop" MaxAttenuation="0.000000"/>

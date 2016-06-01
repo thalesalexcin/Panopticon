@@ -145,7 +145,7 @@
      {
       "Id": "3427338642",
       "Name": "EV_PopWarningPlay",
-      "MaxAttenuation": "400.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "843928844",
@@ -180,7 +180,7 @@
      {
       "Id": "3812724549",
       "Name": "EV_Warning",
-      "MaxAttenuation": "400.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "3309461680",
