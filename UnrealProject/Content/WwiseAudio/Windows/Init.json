@@ -1,0 +1,23 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "10",
+  "SoundbankVersion": "113",
+  "RootPaths": {
+   "ProjectRoot": "C:\\Users\\Pochat.Damien\\Documents\\WwiseProjects\\Panopticon\\",
+   "SourceFilesRoot": "C:\\Users\\Pochat.Damien\\Documents\\WwiseProjects\\Panopticon\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\Pochat.Damien\\Documents\\Panopticon\\UnrealProject\\Content\\WwiseAudio\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "C:\\Users\\Pochat.Damien\\Documents\\WwiseProjects\\Panopticon\\GeneratedSoundBanks\\Windows\\"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Language": "SFX",
+    "ShortName": "Init",
+    "Path": "Init.bnk"
+   }
+  ]
+ }
+}

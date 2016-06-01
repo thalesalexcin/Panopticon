@@ -1,0 +1,540 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "10",
+  "SoundbankVersion": "113",
+  "RootPaths": {
+   "ProjectRoot": "C:\\Users\\Pochat.Damien\\Documents\\WwiseProjects\\Panopticon\\",
+   "SourceFilesRoot": "C:\\Users\\Pochat.Damien\\Documents\\WwiseProjects\\Panopticon\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\Pochat.Damien\\Documents\\Panopticon\\UnrealProject\\Content\\WwiseAudio\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "C:\\Users\\Pochat.Damien\\Documents\\WwiseProjects\\Panopticon\\GeneratedSoundBanks\\Windows\\"
+  },
+  "SoundBanks": [
+   {
+    "Id": "4098060813",
+    "Language": "SFX",
+    "ShortName": "PanopticonSoundBank",
+    "Path": "PanopticonSoundBank.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "2842601371",
+      "Name": "EV_Ambiance"
+     },
+     {
+      "Id": "119859153",
+      "Name": "EV_Birds"
+     },
+     {
+      "Id": "615245659",
+      "Name": "EV_ConfirmationSuspectF"
+     },
+     {
+      "Id": "615245641",
+      "Name": "EV_ConfirmationSuspectT"
+     },
+     {
+      "Id": "2772018542",
+      "Name": "EV_Grow",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "3524210750",
+      "Name": "EV_LeftGrab"
+     },
+     {
+      "Id": "920479680",
+      "Name": "EV_Pop",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "238576133",
+      "Name": "EV_PopAlien",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "2395277203",
+      "Name": "EV_PopAnimals",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "3847764492",
+      "Name": "EV_PopCooking",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "2966491673",
+      "Name": "EV_PopEcologie",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "2548852145",
+      "Name": "EV_PopJouet",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "3055193501",
+      "Name": "EV_PopMedical",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "3140014166",
+      "Name": "EV_PopMeteo",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "3570416449",
+      "Name": "EV_PopMode",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "1757312268",
+      "Name": "EV_PopMoney",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "4189303377",
+      "Name": "EV_PopMusic",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "4142063351",
+      "Name": "EV_PopParanormal",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "2676848790",
+      "Name": "EV_PopPlane",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "3290879169",
+      "Name": "EV_PopPolitics",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "3961471121",
+      "Name": "EV_PopPrison",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "675278654",
+      "Name": "EV_PopSport",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "3668260911",
+      "Name": "EV_PopStudy",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "497504363",
+      "Name": "EV_PopVideoGame",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "3427338642",
+      "Name": "EV_PopWarningPlay",
+      "MaxAttenuation": "3000.000000"
+     },
+     {
+      "Id": "843928844",
+      "Name": "EV_PopWarningStop",
+      "MaxAttenuation": "0.000000"
+     },
+     {
+      "Id": "756731615",
+      "Name": "EV_PopWork",
+      "MaxAttenuation": "200.000000"
+     },
+     {
+      "Id": "1254162402",
+      "Name": "EV_PopWW"
+     },
+     {
+      "Id": "4105256245",
+      "Name": "EV_RightGrab"
+     },
+     {
+      "Id": "1937558711",
+      "Name": "EV_Selection2"
+     },
+     {
+      "Id": "3844712552",
+      "Name": "EV_SelectionSuspectF"
+     },
+     {
+      "Id": "3844712570",
+      "Name": "EV_SelectionSuspectT"
+     },
+     {
+      "Id": "3812724549",
+      "Name": "EV_Warning",
+      "MaxAttenuation": "3000.000000"
+     },
+     {
+      "Id": "3309461680",
+      "Name": "EV_WarningEye",
+      "MaxAttenuation": "20000.000000"
+     },
+     {
+      "Id": "950254951",
+      "Name": "EV_WindPlay"
+     },
+     {
+      "Id": "3938887349",
+      "Name": "EV_WindStop",
+      "MaxAttenuation": "0.000000"
+     },
+     {
+      "Id": "2877597234",
+      "Name": "Panopticon"
+     },
+     {
+      "Id": "1281810935",
+      "Name": "Start"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "2798134",
+      "Language": "SFX",
+      "ShortName": "AmbMiddle1.wav",
+      "Path": "SFX\\AmbMiddle1_8FCC05A6.wem"
+     },
+     {
+      "Id": "31215356",
+      "Language": "SFX",
+      "ShortName": "PopWork.wav",
+      "Path": "SFX\\PopWork_8FCC05A6.wem"
+     },
+     {
+      "Id": "42907215",
+      "Language": "SFX",
+      "ShortName": "Wind4.wav",
+      "Path": "SFX\\Wind4_8FCC05A6.wem"
+     },
+     {
+      "Id": "44193769",
+      "Language": "SFX",
+      "ShortName": "Wind2.wav",
+      "Path": "SFX\\Wind2_8FCC05A6.wem"
+     },
+     {
+      "Id": "50000724",
+      "Language": "SFX",
+      "ShortName": "Eye2.wav",
+      "Path": "SFX\\Eye2_8FCC05A6.wem"
+     },
+     {
+      "Id": "69517136",
+      "Language": "SFX",
+      "ShortName": "Selection3.wav",
+      "Path": "SFX\\Selection3_8FCC05A6.wem"
+     },
+     {
+      "Id": "73242123",
+      "Language": "SFX",
+      "ShortName": "PopPlane.wav",
+      "Path": "SFX\\PopPlane_8FCC05A6.wem"
+     },
+     {
+      "Id": "95676111",
+      "Language": "SFX",
+      "ShortName": "growing.wav",
+      "Path": "SFX\\growing_F8DCC980.wem"
+     },
+     {
+      "Id": "110739623",
+      "Language": "SFX",
+      "ShortName": "AmbFar1.wav",
+      "Path": "SFX\\AmbFar1_8FCC05A6.wem"
+     },
+     {
+      "Id": "137186251",
+      "Language": "SFX",
+      "ShortName": "PopJouet.wav",
+      "Path": "SFX\\PopJouet_8FCC05A6.wem"
+     },
+     {
+      "Id": "140018853",
+      "Language": "SFX",
+      "ShortName": "Birds2.wav",
+      "Path": "SFX\\Birds2_8FCC05A6.wem"
+     },
+     {
+      "Id": "147505433",
+      "Language": "SFX",
+      "ShortName": "Panopticon.wav",
+      "Path": "SFX\\Panopticon_8FCC05A6.wem"
+     },
+     {
+      "Id": "172808180",
+      "Language": "SFX",
+      "ShortName": "WarningMineur.wav",
+      "Path": "SFX\\WarningMineur_8FCC05A6.wem"
+     },
+     {
+      "Id": "235729790",
+      "Language": "SFX",
+      "ShortName": "Wind5.wav",
+      "Path": "SFX\\Wind5_8FCC05A6.wem"
+     },
+     {
+      "Id": "245814124",
+      "Language": "SFX",
+      "ShortName": "AmbFar2.wav",
+      "Path": "SFX\\AmbFar2_8FCC05A6.wem"
+     },
+     {
+      "Id": "246415081",
+      "Language": "SFX",
+      "ShortName": "StartHolograme.wav",
+      "Path": "SFX\\StartHolograme_8FCC05A6.wem"
+     },
+     {
+      "Id": "315398940",
+      "Language": "SFX",
+      "ShortName": "PopVideoGame.wav",
+      "Path": "SFX\\PopVideoGame_8FCC05A6.wem"
+     },
+     {
+      "Id": "352355510",
+      "Language": "SFX",
+      "ShortName": "PopStudy.wav",
+      "Path": "SFX\\PopStudy_8FCC05A6.wem"
+     },
+     {
+      "Id": "382528859",
+      "Language": "SFX",
+      "ShortName": "Eye1.wav",
+      "Path": "SFX\\Eye1_8FCC05A6.wem"
+     },
+     {
+      "Id": "384003615",
+      "Language": "SFX",
+      "ShortName": "AmbClose3.wav",
+      "Path": "SFX\\AmbClose3_8FCC05A6.wem"
+     },
+     {
+      "Id": "408797171",
+      "Language": "SFX",
+      "ShortName": "PopAlien.wav",
+      "Path": "SFX\\PopAlien_8FCC05A6.wem"
+     },
+     {
+      "Id": "409154721",
+      "Language": "SFX",
+      "ShortName": "poptest.wav",
+      "Path": "SFX\\poptest_8FCC05A6.wem"
+     },
+     {
+      "Id": "426538846",
+      "Language": "SFX",
+      "ShortName": "Selection2.wav",
+      "Path": "SFX\\Selection2_8FCC05A6.wem"
+     },
+     {
+      "Id": "454145249",
+      "Language": "SFX",
+      "ShortName": "PopSport.wav",
+      "Path": "SFX\\PopSport_8FCC05A6.wem"
+     },
+     {
+      "Id": "460658693",
+      "Language": "SFX",
+      "ShortName": "WarningMineur2.wav",
+      "Path": "SFX\\WarningMineur2_8FCC05A6.wem"
+     },
+     {
+      "Id": "464870674",
+      "Language": "SFX",
+      "ShortName": "PopAnimal.wav",
+      "Path": "SFX\\PopAnimal_8FCC05A6.wem"
+     },
+     {
+      "Id": "513121370",
+      "Language": "SFX",
+      "ShortName": "Eye3.wav",
+      "Path": "SFX\\Eye3_8FCC05A6.wem"
+     },
+     {
+      "Id": "525251758",
+      "Language": "SFX",
+      "ShortName": "Birds3.wav",
+      "Path": "SFX\\Birds3_8FCC05A6.wem"
+     },
+     {
+      "Id": "559380449",
+      "Language": "SFX",
+      "ShortName": "PopPolitics.wav",
+      "Path": "SFX\\PopPolitics_8FCC05A6.wem"
+     },
+     {
+      "Id": "562872641",
+      "Language": "SFX",
+      "ShortName": "PopPrison.wav",
+      "Path": "SFX\\PopPrison_8FCC05A6.wem"
+     },
+     {
+      "Id": "631814388",
+      "Language": "SFX",
+      "ShortName": "SelectionSuspect.wav",
+      "Path": "SFX\\SelectionSuspect_8FCC05A6.wem"
+     },
+     {
+      "Id": "631869147",
+      "Language": "SFX",
+      "ShortName": "Wind1.wav",
+      "Path": "SFX\\Wind1_8FCC05A6.wem"
+     },
+     {
+      "Id": "659211384",
+      "Language": "SFX",
+      "ShortName": "GrowWarning.wav",
+      "Path": "SFX\\GrowWarning_F8DCC980.wem"
+     },
+     {
+      "Id": "675534784",
+      "Language": "SFX",
+      "ShortName": "PopMode.wav",
+      "Path": "SFX\\PopMode_8FCC05A6.wem"
+     },
+     {
+      "Id": "695400244",
+      "Language": "SFX",
+      "ShortName": "PopWarning.wav",
+      "Path": "SFX\\PopWarning_8FCC05A6.wem"
+     },
+     {
+      "Id": "733032831",
+      "Language": "SFX",
+      "ShortName": "PopMusic.wav",
+      "Path": "SFX\\PopMusic_8FCC05A6.wem"
+     },
+     {
+      "Id": "742193860",
+      "Language": "SFX",
+      "ShortName": "AmbClose2.wav",
+      "Path": "SFX\\AmbClose2_8FCC05A6.wem"
+     },
+     {
+      "Id": "744560602",
+      "Language": "SFX",
+      "ShortName": "PopCooking.wav",
+      "Path": "SFX\\PopCooking_8FCC05A6.wem"
+     },
+     {
+      "Id": "746810667",
+      "Language": "SFX",
+      "ShortName": "WarningMajeur2.wav",
+      "Path": "SFX\\WarningMajeur2_8FCC05A6.wem"
+     },
+     {
+      "Id": "753460977",
+      "Language": "SFX",
+      "ShortName": "WarningMajeur1.wav",
+      "Path": "SFX\\WarningMajeur1_8FCC05A6.wem"
+     },
+     {
+      "Id": "784351153",
+      "Language": "SFX",
+      "ShortName": "PopMoney.wav",
+      "Path": "SFX\\PopMoney_8FCC05A6.wem"
+     },
+     {
+      "Id": "799002650",
+      "Language": "SFX",
+      "ShortName": "AmbFar3.wav",
+      "Path": "SFX\\AmbFar3_8FCC05A6.wem"
+     },
+     {
+      "Id": "826098019",
+      "Language": "SFX",
+      "ShortName": "Birds5.wav",
+      "Path": "SFX\\Birds5_8FCC05A6.wem"
+     },
+     {
+      "Id": "846172224",
+      "Language": "SFX",
+      "ShortName": "Birds1.wav",
+      "Path": "SFX\\Birds1_8FCC05A6.wem"
+     },
+     {
+      "Id": "870275962",
+      "Language": "SFX",
+      "ShortName": "ConfirmationSuspect.wav",
+      "Path": "SFX\\ConfirmationSuspect_8FCC05A6.wem"
+     },
+     {
+      "Id": "923226415",
+      "Language": "SFX",
+      "ShortName": "Selection1.wav",
+      "Path": "SFX\\Selection1_8FCC05A6.wem"
+     },
+     {
+      "Id": "930414140",
+      "Language": "SFX",
+      "ShortName": "Birds4.wav",
+      "Path": "SFX\\Birds4_8FCC05A6.wem"
+     },
+     {
+      "Id": "973341240",
+      "Language": "SFX",
+      "ShortName": "Nappe.wav",
+      "Path": "SFX\\Nappe_F8DCC980.wem"
+     },
+     {
+      "Id": "976983258",
+      "Language": "SFX",
+      "ShortName": "AmbMiddle3.wav",
+      "Path": "SFX\\AmbMiddle3_8FCC05A6.wem"
+     },
+     {
+      "Id": "989505873",
+      "Language": "SFX",
+      "ShortName": "PopEcologie.wav",
+      "Path": "SFX\\PopEcologie_8FCC05A6.wem"
+     },
+     {
+      "Id": "1011419357",
+      "Language": "SFX",
+      "ShortName": "Wind6.wav",
+      "Path": "SFX\\Wind6_8FCC05A6.wem"
+     },
+     {
+      "Id": "1017950140",
+      "Language": "SFX",
+      "ShortName": "Wind3.wav",
+      "Path": "SFX\\Wind3_8FCC05A6.wem"
+     },
+     {
+      "Id": "1037593168",
+      "Language": "SFX",
+      "ShortName": "PopMedical.wav",
+      "Path": "SFX\\PopMedical_8FCC05A6.wem"
+     },
+     {
+      "Id": "1044121913",
+      "Language": "SFX",
+      "ShortName": "PopParanormal.wav",
+      "Path": "SFX\\PopParanormal_8FCC05A6.wem"
+     },
+     {
+      "Id": "1046467624",
+      "Language": "SFX",
+      "ShortName": "AmbClose1.wav",
+      "Path": "SFX\\AmbClose1_8FCC05A6.wem"
+     },
+     {
+      "Id": "1065872233",
+      "Language": "SFX",
+      "ShortName": "AmbMiddle2.wav",
+      "Path": "SFX\\AmbMiddle2_8FCC05A6.wem"
+     }
+    ]
+   }
+  ]
+ }
+}

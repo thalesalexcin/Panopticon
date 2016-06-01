@@ -23,38 +23,38 @@
 				<Event Id="119859153" Name="EV_Birds"/>
 				<Event Id="615245659" Name="EV_ConfirmationSuspectF"/>
 				<Event Id="615245641" Name="EV_ConfirmationSuspectT"/>
-				<Event Id="2772018542" Name="EV_Grow"/>
+				<Event Id="2772018542" Name="EV_Grow" MaxAttenuation="200.000000"/>
 				<Event Id="3524210750" Name="EV_LeftGrab"/>
-				<Event Id="920479680" Name="EV_Pop"/>
-				<Event Id="238576133" Name="EV_PopAlien"/>
-				<Event Id="2395277203" Name="EV_PopAnimals"/>
-				<Event Id="3847764492" Name="EV_PopCooking"/>
-				<Event Id="2966491673" Name="EV_PopEcologie"/>
-				<Event Id="2548852145" Name="EV_PopJouet"/>
-				<Event Id="3055193501" Name="EV_PopMedical"/>
-				<Event Id="3140014166" Name="EV_PopMeteo"/>
-				<Event Id="3570416449" Name="EV_PopMode"/>
-				<Event Id="1757312268" Name="EV_PopMoney"/>
-				<Event Id="4189303377" Name="EV_PopMusic"/>
-				<Event Id="4142063351" Name="EV_PopParanormal"/>
-				<Event Id="2676848790" Name="EV_PopPlane"/>
-				<Event Id="3290879169" Name="EV_PopPolitics"/>
-				<Event Id="3961471121" Name="EV_PopPrison"/>
-				<Event Id="675278654" Name="EV_PopSport"/>
-				<Event Id="3668260911" Name="EV_PopStudy"/>
-				<Event Id="497504363" Name="EV_PopVideoGame"/>
-				<Event Id="3427338642" Name="EV_PopWarningPlay"/>
-				<Event Id="843928844" Name="EV_PopWarningStop"/>
-				<Event Id="756731615" Name="EV_PopWork"/>
+				<Event Id="920479680" Name="EV_Pop" MaxAttenuation="200.000000"/>
+				<Event Id="238576133" Name="EV_PopAlien" MaxAttenuation="200.000000"/>
+				<Event Id="2395277203" Name="EV_PopAnimals" MaxAttenuation="200.000000"/>
+				<Event Id="3847764492" Name="EV_PopCooking" MaxAttenuation="200.000000"/>
+				<Event Id="2966491673" Name="EV_PopEcologie" MaxAttenuation="200.000000"/>
+				<Event Id="2548852145" Name="EV_PopJouet" MaxAttenuation="200.000000"/>
+				<Event Id="3055193501" Name="EV_PopMedical" MaxAttenuation="200.000000"/>
+				<Event Id="3140014166" Name="EV_PopMeteo" MaxAttenuation="200.000000"/>
+				<Event Id="3570416449" Name="EV_PopMode" MaxAttenuation="200.000000"/>
+				<Event Id="1757312268" Name="EV_PopMoney" MaxAttenuation="200.000000"/>
+				<Event Id="4189303377" Name="EV_PopMusic" MaxAttenuation="200.000000"/>
+				<Event Id="4142063351" Name="EV_PopParanormal" MaxAttenuation="200.000000"/>
+				<Event Id="2676848790" Name="EV_PopPlane" MaxAttenuation="200.000000"/>
+				<Event Id="3290879169" Name="EV_PopPolitics" MaxAttenuation="200.000000"/>
+				<Event Id="3961471121" Name="EV_PopPrison" MaxAttenuation="200.000000"/>
+				<Event Id="675278654" Name="EV_PopSport" MaxAttenuation="200.000000"/>
+				<Event Id="3668260911" Name="EV_PopStudy" MaxAttenuation="200.000000"/>
+				<Event Id="497504363" Name="EV_PopVideoGame" MaxAttenuation="200.000000"/>
+				<Event Id="3427338642" Name="EV_PopWarningPlay" MaxAttenuation="3000.000000"/>
+				<Event Id="843928844" Name="EV_PopWarningStop" MaxAttenuation="0.000000"/>
+				<Event Id="756731615" Name="EV_PopWork" MaxAttenuation="200.000000"/>
 				<Event Id="1254162402" Name="EV_PopWW"/>
 				<Event Id="4105256245" Name="EV_RightGrab"/>
 				<Event Id="1937558711" Name="EV_Selection2"/>
 				<Event Id="3844712552" Name="EV_SelectionSuspectF"/>
 				<Event Id="3844712570" Name="EV_SelectionSuspectT"/>
-				<Event Id="3812724549" Name="EV_Warning"/>
-				<Event Id="3309461680" Name="EV_WarningEye"/>
+				<Event Id="3812724549" Name="EV_Warning" MaxAttenuation="3000.000000"/>
+				<Event Id="3309461680" Name="EV_WarningEye" MaxAttenuation="20000.000000"/>
 				<Event Id="950254951" Name="EV_WindPlay"/>
-				<Event Id="3938887349" Name="EV_WindStop"/>
+				<Event Id="3938887349" Name="EV_WindStop" MaxAttenuation="0.000000"/>
 				<Event Id="2877597234" Name="Panopticon"/>
 				<Event Id="1281810935" Name="Start"/>
 			</IncludedEvents>
