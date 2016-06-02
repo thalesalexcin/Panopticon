@@ -16,9 +16,6 @@
 				<Event Id="119859153" Name="EV_Birds"/>
 				<Event Id="615245659" Name="EV_ConfirmationSuspectF"/>
 				<Event Id="615245641" Name="EV_ConfirmationSuspectT"/>
-				<Event Id="2772018542" Name="EV_Grow" MaxAttenuation="150.000000"/>
-				<Event Id="3524210750" Name="EV_LeftGrab"/>
-				<Event Id="920479680" Name="EV_Pop" MaxAttenuation="150.000000"/>
 				<Event Id="238576133" Name="EV_PopAlien" MaxAttenuation="150.000000"/>
 				<Event Id="2395277203" Name="EV_PopAnimals" MaxAttenuation="150.000000"/>
 				<Event Id="3847764492" Name="EV_PopCooking" MaxAttenuation="150.000000"/>
@@ -36,16 +33,15 @@
 				<Event Id="675278654" Name="EV_PopSport" MaxAttenuation="150.000000"/>
 				<Event Id="3668260911" Name="EV_PopStudy" MaxAttenuation="150.000000"/>
 				<Event Id="497504363" Name="EV_PopVideoGame" MaxAttenuation="150.000000"/>
-				<Event Id="3427338642" Name="EV_PopWarningPlay" MaxAttenuation="600.000000"/>
+				<Event Id="3427338642" Name="EV_PopWarningPlay" MaxAttenuation="150.000000"/>
 				<Event Id="843928844" Name="EV_PopWarningStop" MaxAttenuation="0.000000"/>
 				<Event Id="756731615" Name="EV_PopWork" MaxAttenuation="150.000000"/>
-				<Event Id="1254162402" Name="EV_PopWW"/>
+				<Event Id="1254162402" Name="EV_PopWW" MaxAttenuation="150.000000"/>
 				<Event Id="4105256245" Name="EV_RightGrab"/>
 				<Event Id="1937558711" Name="EV_Selection2"/>
 				<Event Id="3844712552" Name="EV_SelectionSuspectF"/>
 				<Event Id="3844712570" Name="EV_SelectionSuspectT"/>
-				<Event Id="3812724549" Name="EV_Warning" MaxAttenuation="600.000000"/>
-				<Event Id="3309461680" Name="EV_WarningEye" MaxAttenuation="20000.000000"/>
+				<Event Id="3309461680" Name="EV_WarningEye" MaxAttenuation="150.000000"/>
 				<Event Id="950254951" Name="EV_WindPlay"/>
 				<Event Id="3938887349" Name="EV_WindStop" MaxAttenuation="0.000000"/>
 				<Event Id="2877597234" Name="Panopticon"/>
@@ -79,10 +75,6 @@
 				<File Id="73242123" Language="SFX">
 					<ShortName>PopPlane.wav</ShortName>
 					<Path>SFX\PopPlane_8FCC05A6.wem</Path>
-				</File>
-				<File Id="95676111" Language="SFX">
-					<ShortName>growing.wav</ShortName>
-					<Path>SFX\growing_F8DCC980.wem</Path>
 				</File>
 				<File Id="110739623" Language="SFX">
 					<ShortName>AmbFar1.wav</ShortName>
@@ -135,10 +127,6 @@
 				<File Id="408797171" Language="SFX">
 					<ShortName>PopAlien.wav</ShortName>
 					<Path>SFX\PopAlien_8FCC05A6.wem</Path>
-				</File>
-				<File Id="409154721" Language="SFX">
-					<ShortName>poptest.wav</ShortName>
-					<Path>SFX\poptest_8FCC05A6.wem</Path>
 				</File>
 				<File Id="426538846" Language="SFX">
 					<ShortName>Selection2.wav</ShortName>
@@ -215,6 +203,10 @@
 				<File Id="784351153" Language="SFX">
 					<ShortName>PopMoney.wav</ShortName>
 					<Path>SFX\PopMoney_8FCC05A6.wem</Path>
+				</File>
+				<File Id="792173909" Language="SFX">
+					<ShortName>growing.wav</ShortName>
+					<Path>SFX\growing_F8DCC980.wem</Path>
 				</File>
 				<File Id="799002650" Language="SFX">
 					<ShortName>AmbFar3.wav</ShortName>

@@ -7,7 +7,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	675278654	EV_PopSport			\Default Work Unit\Pops\EV_PopSport	
 	756731615	EV_PopWork			\Default Work Unit\Pops\EV_PopWork	
 	843928844	EV_PopWarningStop			\Default Work Unit\EV_PopWarningStop	
-	920479680	EV_Pop			\Default Work Unit\Pops\EV_Pop	
 	950254951	EV_WindPlay			\Default Work Unit\EV_WindPlay	
 	1254162402	EV_PopWW			\Default Work Unit\EV_PopWW	
 	1281810935	Start			\Default Work Unit\Start	
@@ -16,7 +15,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2395277203	EV_PopAnimals			\Default Work Unit\Pops\EV_PopAnimals	
 	2548852145	EV_PopJouet			\Default Work Unit\Pops\EV_PopJouet	
 	2676848790	EV_PopPlane			\Default Work Unit\Pops\EV_PopPlane	
-	2772018542	EV_Grow			\Default Work Unit\Pops\EV_Grow	
 	2842601371	EV_Ambiance			\Default Work Unit\EV_Ambiance	
 	2877597234	Panopticon			\Default Work Unit\Panopticon	
 	2966491673	EV_PopEcologie			\Default Work Unit\Pops\EV_PopEcologie	
@@ -25,10 +23,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	3290879169	EV_PopPolitics			\Default Work Unit\Pops\EV_PopPolitics	
 	3309461680	EV_WarningEye			\Default Work Unit\EV_WarningEye	
 	3427338642	EV_PopWarningPlay			\Default Work Unit\EV_PopWarningPlay	
-	3524210750	EV_LeftGrab			\Default Work Unit\EV_Selection\EV_LeftGrab	
 	3570416449	EV_PopMode			\Default Work Unit\Pops\EV_PopMode	
 	3668260911	EV_PopStudy			\Default Work Unit\Pops\EV_PopStudy	
-	3812724549	EV_Warning			\Default Work Unit\EV_Warning	
 	3844712552	EV_SelectionSuspectF			\Default Work Unit\EV_SelectionSuspectF	
 	3844712570	EV_SelectionSuspectT			\Default Work Unit\EV_SelectionSuspectT	
 	3847764492	EV_PopCooking			\Default Work Unit\Pops\EV_PopCooking	
@@ -41,63 +37,63 @@ Event	ID	Name			Wwise Object Path	Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	382204411	GP_Ambiance			\Default Work Unit\GP_Ambiance	
 	671634148	Grow			\Default Work Unit\Grow	
+	1321077761	WarningAttenuation			\Default Work Unit\WarningAttenuation	
 	1537061107	Wind			\Default Work Unit\Wind	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	2798134	AmbMiddle1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbMiddle1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbMiddle\AmbMiddle1		254834
-	31215356	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopWork_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopWork\Pop		77476
-	42907215	Wind4	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind4_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind4		176657
-	44193769	Wind2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind2		193046
-	50000724	Eye2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Eye2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\WarningEye\Eye2		125253
-	69517136	Selection3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection3_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Selection2\Selection3		84245
-	73242123	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopPlane_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopPlane\Pop		82031
-	95676111	Grow	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\growing_F8DCC980.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopEcologie\Grow		190504
+	31215356	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopWork_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Work\Pop		77476
+	42907215	Zoom4	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind4_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zoom\Zoom\Zoom4		176657
+	44193769	Zoom2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zoom\Zoom\Zoom2		193046
+	50000724	Eye2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Eye2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Warning\Suspect\Eye2		125253
+	69517136	DoubleGrab2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection3_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\DoubleGrab\DoubleGrab2		84245
+	73242123	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopPlane_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Plane\Pop		82031
 	110739623	AmbFar1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbFar1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbFar\AmbFar1		530109
-	137186251	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopJouet_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopJouet\Pop		80355
+	137186251	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopJouet_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Jouet\Pop		80355
 	140018853	Birds2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds2		742244
 	147505433	Panopticon	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Panopticon_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Panopticon		148837
-	172808180	WarningMineur	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\WarningMineur_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\PopWarning\WARNING\WarningMineur\WarningMineur		183438
-	235729790	Wind5	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind5_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind5		228030
+	172808180	WarningMineur	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\WarningMineur_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Warning\Warning\WARNING\WarningMineur\WarningMineur		183438
+	235729790	Zoom5	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind5_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zoom\Zoom\Zoom5		228030
 	245814124	AmbFar2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbFar2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbFar\AmbFar2		374943
 	246415081	Start	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\StartHolograme_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Start		331702
-	315398940	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopVideoGame_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopVideoGame\Pop		77522
-	352355510	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopStudy_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopStduy\Pop		76472
-	382528859	Eye1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Eye1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\WarningEye\Eye1		122076
+	315398940	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopVideoGame_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\VideoGame\Pop		77522
+	352355510	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopStudy_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Stduy\Pop		76472
+	382528859	Eye1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Eye1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Warning\Suspect\Eye1		122076
 	384003615	AmbClose3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbClose3_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbClose\AmbClose3		376489
-	408797171	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopAlien_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopMeteo\Pop		87207
-	409154721	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\poptest_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopMain\Pop		73609
-	426538846	Selection2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Selection2\Selection2		85916
-	454145249	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopSport_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopSport\Pop		76413
-	460658693	WarningMineur2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\WarningMineur2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\PopWarning\WARNING\WarningMineur\WarningMineur2		183249
-	464870674	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopAnimal_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopAnimals\Pop		75602
-	513121370	Eye3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Eye3_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\WarningEye\Eye3		125322
+	408797171	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopAlien_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Meteo\Pop		87207
+	426538846	DoubleGrab1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\DoubleGrab\DoubleGrab1		85916
+	454145249	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopSport_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Sport\Pop		76413
+	460658693	WarningMineur2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\WarningMineur2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Warning\Warning\WARNING\WarningMineur\WarningMineur2		183249
+	464870674	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopAnimal_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Animals\Pop		75602
+	513121370	Eye3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Eye3_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Warning\Suspect\Eye3		125322
 	525251758	Birds3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds3_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds3		807586
-	559380449	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopPolitics_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopPolitics\Pop		75129
-	562872641	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopPrison_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopPrison\Pop		83185
-	631814388	SelectionSuspectF	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\SelectionSuspect_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\SelectionSuspectF		74534
-	631869147	Wind1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind1		196833
-	659211384	Grow	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\GrowWarning_F8DCC980.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\PopWarning\Grow		117632
-	675534784	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopMode_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopMode\Pop		75212
-	695400244	PopWW	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopWarning_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\PopWW		83014
-	733032831	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopMusic_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopMusic\Pop		79448
+	559380449	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopPolitics_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Politics\Pop		75129
+	562872641	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopPrison_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Prison\Pop		83185
+	631814388	SelectionSuspectF	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\SelectionSuspect_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Suspect\SelectionSuspectF		74534
+	631869147	Zoom1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zoom\Zoom\Zoom1		196833
+	659211384	Grow	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\GrowWarning_F8DCC980.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Warning\Warning\Grow		117632
+	675534784	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopMode_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Mode\Pop		75212
+	695400244	nonSuspect	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopWarning_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Warning\nonSuspect		83014
+	733032831	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopMusic_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Music\Pop		79448
 	742193860	AmbClose2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbClose2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbClose\AmbClose2		396473
-	744560602	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopCooking_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopCooking\Pop		88795
-	746810667	WarningMajeur2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\WarningMajeur2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\PopWarning\WARNING\WarningMajeur\WarningMajeur2		180636
-	753460977	WarningMajeur1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\WarningMajeur1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\PopWarning\WARNING\WarningMajeur\WarningMajeur1		180591
-	784351153	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopMoney_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopMoney\Pop		85946
+	744560602	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopCooking_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Cooking\Pop		88795
+	746810667	WarningMajeur2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\WarningMajeur2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Warning\Warning\WARNING\WarningMajeur\WarningMajeur2		180636
+	753460977	WarningMajeur1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\WarningMajeur1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Warning\Warning\WARNING\WarningMajeur\WarningMajeur1		180591
+	784351153	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopMoney_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Money\Pop		85946
+	792173909	Grow	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\growing_F8DCC980.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Ecologie\Grow		190504
 	799002650	AmbFar3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbFar3_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbFar\AmbFar3		356190
 	826098019	Birds5	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds5_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds5		1112300
 	846172224	Birds1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds1		716522
-	870275962	ConfirmationSuspectF	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\ConfirmationSuspect_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\ConfirmationSuspectF		108899
-	923226415	RightGrab	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\RightGrab		79171
+	870275962	ConfirmationSuspectF	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\ConfirmationSuspect_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Suspect\ConfirmationSuspectF		108899
+	923226415	RightGrab	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Grabs\RightGrab		79171
 	930414140	Birds4	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds4_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds4		783807
 	973341240	Nappe	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Nappe_F8DCC980.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Nappe		752037
 	976983258	AmbMiddle3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbMiddle3_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbMiddle\AmbMiddle3		232053
-	989505873	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopEcologie_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopEcologie\Pop		78905
-	1011419357	Wind6	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind6_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind6		170981
-	1017950140	Wind3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind3_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\Wind3		174886
-	1037593168	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopMedical_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopMedical\Pop		71260
-	1044121913	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopParanormal_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pop\GROWPOPS\PopParanormal\Pop		71133
+	989505873	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopEcologie_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Ecologie\Pop		78905
+	1011419357	Zoom6	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind6_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zoom\Zoom\Zoom6		170981
+	1017950140	Zoom3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Wind3_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Zoom\Zoom\Zoom3		174886
+	1037593168	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopMedical_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Medical\Pop		71260
+	1044121913	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopParanormal_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Paranormal\Pop		71133
 	1046467624	AmbClose1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbClose1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbClose\AmbClose1		398727
 	1065872233	AmbMiddle2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbMiddle2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbMiddle\AmbMiddle2		257761
 

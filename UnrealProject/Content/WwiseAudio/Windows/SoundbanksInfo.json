@@ -44,20 +44,6 @@
       "Name": "EV_ConfirmationSuspectT"
      },
      {
-      "Id": "2772018542",
-      "Name": "EV_Grow",
-      "MaxAttenuation": "150.000000"
-     },
-     {
-      "Id": "3524210750",
-      "Name": "EV_LeftGrab"
-     },
-     {
-      "Id": "920479680",
-      "Name": "EV_Pop",
-      "MaxAttenuation": "150.000000"
-     },
-     {
       "Id": "238576133",
       "Name": "EV_PopAlien",
       "MaxAttenuation": "150.000000"
@@ -145,7 +131,7 @@
      {
       "Id": "3427338642",
       "Name": "EV_PopWarningPlay",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "150.000000"
      },
      {
       "Id": "843928844",
@@ -159,7 +145,8 @@
      },
      {
       "Id": "1254162402",
-      "Name": "EV_PopWW"
+      "Name": "EV_PopWW",
+      "MaxAttenuation": "150.000000"
      },
      {
       "Id": "4105256245",
@@ -178,14 +165,9 @@
       "Name": "EV_SelectionSuspectT"
      },
      {
-      "Id": "3812724549",
-      "Name": "EV_Warning",
-      "MaxAttenuation": "600.000000"
-     },
-     {
       "Id": "3309461680",
       "Name": "EV_WarningEye",
-      "MaxAttenuation": "20000.000000"
+      "MaxAttenuation": "150.000000"
      },
      {
       "Id": "950254951",
@@ -247,12 +229,6 @@
       "Language": "SFX",
       "ShortName": "PopPlane.wav",
       "Path": "SFX\\PopPlane_8FCC05A6.wem"
-     },
-     {
-      "Id": "95676111",
-      "Language": "SFX",
-      "ShortName": "growing.wav",
-      "Path": "SFX\\growing_F8DCC980.wem"
      },
      {
       "Id": "110739623",
@@ -331,12 +307,6 @@
       "Language": "SFX",
       "ShortName": "PopAlien.wav",
       "Path": "SFX\\PopAlien_8FCC05A6.wem"
-     },
-     {
-      "Id": "409154721",
-      "Language": "SFX",
-      "ShortName": "poptest.wav",
-      "Path": "SFX\\poptest_8FCC05A6.wem"
      },
      {
       "Id": "426538846",
@@ -451,6 +421,12 @@
       "Language": "SFX",
       "ShortName": "PopMoney.wav",
       "Path": "SFX\\PopMoney_8FCC05A6.wem"
+     },
+     {
+      "Id": "792173909",
+      "Language": "SFX",
+      "ShortName": "growing.wav",
+      "Path": "SFX\\growing_F8DCC980.wem"
      },
      {
       "Id": "799002650",
