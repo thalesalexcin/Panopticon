@@ -39,14 +39,18 @@ void UCityMap::BeginPlay()
 bool UCityMap::DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams) 
 {
 	FVector camLoc = World->GetFirstPlayerController()->PlayerCameraManager->GetCameraLocation();
+	FVector up = World->GetFirstPlayerController()->PlayerCameraManager->GetActorUpVector();
 	FRotator rot = World->GetFirstPlayerController()->PlayerCameraManager->GetCameraRotation();
 
-	FVector start = camLoc;
-	FVector end = camLoc + (rot.Vector() * 100000);
+	FVector start = camLoc + (up * 5000);
+	FVector result = FMath::Lerp(LeftHandPosition, RightHandPosition, 0.5f);
+	FVector end = result + ((start-result) * 100000);
 
 	RV_TraceParams->bTraceComplex = true;
 	RV_TraceParams->bTraceAsyncScene = true;
 	RV_TraceParams->bReturnPhysicalMaterial = true;
+
+
 
 	bool traced = World->LineTraceSingle(*RV_Hit, start, end, ECC_GameTraceChannel1, *RV_TraceParams);
 	
