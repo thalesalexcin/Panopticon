@@ -42,9 +42,9 @@ bool UCityMap::DoTrace(FHitResult* RV_Hit, FCollisionQueryParams* RV_TraceParams
 	FVector up = World->GetFirstPlayerController()->PlayerCameraManager->GetActorUpVector();
 	FRotator rot = World->GetFirstPlayerController()->PlayerCameraManager->GetCameraRotation();
 
-	FVector start = camLoc + (up * 5000);
+	FVector start = camLoc;
 	FVector result = FMath::Lerp(LeftHandPosition, RightHandPosition, 0.5f);
-	FVector end = result + ((start-result) * 100000);
+	FVector end = camLoc + (rot.Vector() * 100000);
 
 	RV_TraceParams->bTraceComplex = true;
 	RV_TraceParams->bTraceAsyncScene = true;
