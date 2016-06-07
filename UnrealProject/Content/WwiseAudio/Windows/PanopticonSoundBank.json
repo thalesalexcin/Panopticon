@@ -27,6 +27,10 @@
       "Name": "EV_Birds"
      },
      {
+      "Id": "1252188432",
+      "Name": "EV_Ceiling"
+     },
+     {
       "Id": "615245659",
       "Name": "EV_ConfirmationSuspectF"
      },
@@ -35,94 +39,110 @@
       "Name": "EV_ConfirmationSuspectT"
      },
      {
+      "Id": "1811039979",
+      "Name": "EV_ConfirmDryLeft"
+     },
+     {
+      "Id": "3164412518",
+      "Name": "EV_ConfirmDryRight"
+     },
+     {
+      "Id": "3235668300",
+      "Name": "EV_ConfirmWetLeft"
+     },
+     {
+      "Id": "2054513227",
+      "Name": "EV_ConfirmWetRight"
+     },
+     {
       "Id": "238576133",
       "Name": "EV_PopAlien",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "2395277203",
       "Name": "EV_PopAnimals",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "3847764492",
       "Name": "EV_PopCooking",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "2966491673",
       "Name": "EV_PopEcologie",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "2548852145",
       "Name": "EV_PopJouet",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "3055193501",
       "Name": "EV_PopMedical",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "3140014166",
       "Name": "EV_PopMeteo",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "3570416449",
       "Name": "EV_PopMode",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "1757312268",
       "Name": "EV_PopMoney",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "4189303377",
       "Name": "EV_PopMusic",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "4142063351",
       "Name": "EV_PopParanormal",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "2676848790",
       "Name": "EV_PopPlane",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "3290879169",
       "Name": "EV_PopPolitics",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "3961471121",
       "Name": "EV_PopPrison",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "675278654",
       "Name": "EV_PopSport",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "3668260911",
       "Name": "EV_PopStudy",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "497504363",
       "Name": "EV_PopVideoGame",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "3427338642",
       "Name": "EV_PopWarningPlay",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "843928844",
@@ -132,12 +152,12 @@
      {
       "Id": "756731615",
       "Name": "EV_PopWork",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "1254162402",
       "Name": "EV_PopWW",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "4105256245",
@@ -156,9 +176,19 @@
       "Name": "EV_SelectionSuspectT"
      },
      {
+      "Id": "1762137560",
+      "Name": "EV_ThisIsThePolicePlay",
+      "MaxAttenuation": "450.000000"
+     },
+     {
+      "Id": "4134584874",
+      "Name": "EV_ThisIsThePoliceStop",
+      "MaxAttenuation": "0.000000"
+     },
+     {
       "Id": "3309461680",
       "Name": "EV_WarningEye",
-      "MaxAttenuation": "150.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "950254951",
@@ -348,6 +378,12 @@
       "Path": "SFX\\PopPrison_8FCC05A6.wem"
      },
      {
+      "Id": "615788396",
+      "Language": "SFX",
+      "ShortName": "Ceiling3.wav",
+      "Path": "SFX\\Ceiling3_8FCC05A6.wem"
+     },
+     {
       "Id": "631814388",
       "Language": "SFX",
       "ShortName": "SelectionSuspect.wav",
@@ -370,6 +406,12 @@
       "Language": "SFX",
       "ShortName": "PopMode.wav",
       "Path": "SFX\\PopMode_8FCC05A6.wem"
+     },
+     {
+      "Id": "694567616",
+      "Language": "SFX",
+      "ShortName": "Ceiling2.wav",
+      "Path": "SFX\\Ceiling2_8FCC05A6.wem"
      },
      {
       "Id": "695400244",
@@ -408,6 +450,12 @@
       "Path": "SFX\\WarningMajeur1_8FCC05A6.wem"
      },
      {
+      "Id": "781710487",
+      "Language": "SFX",
+      "ShortName": "ConfirmDry.wav",
+      "Path": "SFX\\ConfirmDry_8FCC05A6.wem"
+     },
+     {
       "Id": "784351153",
       "Language": "SFX",
       "ShortName": "PopMoney.wav",
@@ -432,10 +480,22 @@
       "Path": "SFX\\Birds5_8FCC05A6.wem"
      },
      {
+      "Id": "838395962",
+      "Language": "SFX",
+      "ShortName": "Ceiling1.wav",
+      "Path": "SFX\\Ceiling1_8FCC05A6.wem"
+     },
+     {
       "Id": "846172224",
       "Language": "SFX",
       "ShortName": "Birds1.wav",
       "Path": "SFX\\Birds1_8FCC05A6.wem"
+     },
+     {
+      "Id": "869865411",
+      "Language": "SFX",
+      "ShortName": "Police.wav",
+      "Path": "SFX\\Police_8FCC05A6.wem"
      },
      {
       "Id": "870275962",
@@ -454,6 +514,12 @@
       "Language": "SFX",
       "ShortName": "Birds4.wav",
       "Path": "SFX\\Birds4_8FCC05A6.wem"
+     },
+     {
+      "Id": "933212147",
+      "Language": "SFX",
+      "ShortName": "ConfirmWet.wav",
+      "Path": "SFX\\ConfirmWet_8FCC05A6.wem"
      },
      {
       "Id": "973341240",
