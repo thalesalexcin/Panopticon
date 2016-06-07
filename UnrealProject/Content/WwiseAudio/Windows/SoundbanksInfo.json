@@ -36,12 +36,32 @@
       "Name": "EV_Birds"
      },
      {
+      "Id": "1252188432",
+      "Name": "EV_Ceiling"
+     },
+     {
       "Id": "615245659",
       "Name": "EV_ConfirmationSuspectF"
      },
      {
       "Id": "615245641",
       "Name": "EV_ConfirmationSuspectT"
+     },
+     {
+      "Id": "1811039979",
+      "Name": "EV_ConfirmDryLeft"
+     },
+     {
+      "Id": "3164412518",
+      "Name": "EV_ConfirmDryRight"
+     },
+     {
+      "Id": "3235668300",
+      "Name": "EV_ConfirmWetLeft"
+     },
+     {
+      "Id": "2054513227",
+      "Name": "EV_ConfirmWetRight"
      },
      {
       "Id": "238576133",
@@ -367,6 +387,12 @@
       "Path": "SFX\\PopPrison_8FCC05A6.wem"
      },
      {
+      "Id": "615788396",
+      "Language": "SFX",
+      "ShortName": "Ceiling3.wav",
+      "Path": "SFX\\Ceiling3_8FCC05A6.wem"
+     },
+     {
       "Id": "631814388",
       "Language": "SFX",
       "ShortName": "SelectionSuspect.wav",
@@ -389,6 +415,12 @@
       "Language": "SFX",
       "ShortName": "PopMode.wav",
       "Path": "SFX\\PopMode_8FCC05A6.wem"
+     },
+     {
+      "Id": "694567616",
+      "Language": "SFX",
+      "ShortName": "Ceiling2.wav",
+      "Path": "SFX\\Ceiling2_8FCC05A6.wem"
      },
      {
       "Id": "695400244",
@@ -427,6 +459,12 @@
       "Path": "SFX\\WarningMajeur1_8FCC05A6.wem"
      },
      {
+      "Id": "781710487",
+      "Language": "SFX",
+      "ShortName": "ConfirmDry.wav",
+      "Path": "SFX\\ConfirmDry_8FCC05A6.wem"
+     },
+     {
       "Id": "784351153",
       "Language": "SFX",
       "ShortName": "PopMoney.wav",
@@ -449,6 +487,12 @@
       "Language": "SFX",
       "ShortName": "Birds5.wav",
       "Path": "SFX\\Birds5_8FCC05A6.wem"
+     },
+     {
+      "Id": "838395962",
+      "Language": "SFX",
+      "ShortName": "Ceiling1.wav",
+      "Path": "SFX\\Ceiling1_8FCC05A6.wem"
      },
      {
       "Id": "846172224",
@@ -479,6 +523,12 @@
       "Language": "SFX",
       "ShortName": "Birds4.wav",
       "Path": "SFX\\Birds4_8FCC05A6.wem"
+     },
+     {
+      "Id": "933212147",
+      "Language": "SFX",
+      "ShortName": "ConfirmWet.wav",
+      "Path": "SFX\\ConfirmWet_8FCC05A6.wem"
      },
      {
       "Id": "973341240",
