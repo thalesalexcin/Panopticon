@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1254162402	EV_PopWW			\Default Work Unit\EV_PopWW	
 	1281810935	Start			\Default Work Unit\Start	
 	1757312268	EV_PopMoney			\Default Work Unit\Pops\EV_PopMoney	
+	1762137560	EV_ThisIsThePolicePlay			\Default Work Unit\EV_ThisIsThePolicePlay	
 	1937558711	EV_Selection2			\Default Work Unit\EV_Selection2	
 	2395277203	EV_PopAnimals			\Default Work Unit\Pops\EV_PopAnimals	
 	2548852145	EV_PopJouet			\Default Work Unit\Pops\EV_PopJouet	
@@ -31,6 +32,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3938887349	EV_WindStop			\Default Work Unit\EV_WindStop	
 	3961471121	EV_PopPrison			\Default Work Unit\Pops\EV_PopPrison	
 	4105256245	EV_RightGrab			\Default Work Unit\EV_Selection\EV_RightGrab	
+	4134584874	EV_ThisIsThePoliceStop			\Default Work Unit\EV_ThisIsThePoliceStop	
 	4142063351	EV_PopParanormal			\Default Work Unit\Pops\EV_PopParanormal	
 	4189303377	EV_PopMusic			\Default Work Unit\Pops\EV_PopMusic	
 
@@ -84,6 +86,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	799002650	AmbFar3	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbFar3_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbFar\AmbFar3		356190
 	826098019	Birds5	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds5_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds5		1112300
 	846172224	Birds1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds1		716522
+	869865411	Police	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Police_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\ThisIsThePolice\Police		132899
 	870275962	ConfirmationSuspectF	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\ConfirmationSuspect_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Suspect\ConfirmationSuspectF		108899
 	923226415	RightGrab	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Selection1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Selection\Grabs\RightGrab		79171
 	930414140	Birds4	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Birds4_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\Birds\Birds4		783807
