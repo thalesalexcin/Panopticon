@@ -39,105 +39,97 @@
       "Name": "EV_ConfirmationSuspectT"
      },
      {
-      "Id": "1811039979",
-      "Name": "EV_ConfirmDryLeft"
+      "Id": "1597811436",
+      "Name": "EV_ConfirmIn"
      },
      {
-      "Id": "3164412518",
-      "Name": "EV_ConfirmDryRight"
-     },
-     {
-      "Id": "3235668300",
-      "Name": "EV_ConfirmWetLeft"
-     },
-     {
-      "Id": "2054513227",
-      "Name": "EV_ConfirmWetRight"
+      "Id": "3748794763",
+      "Name": "EV_ConfirmOut"
      },
      {
       "Id": "238576133",
       "Name": "EV_PopAlien",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "2395277203",
       "Name": "EV_PopAnimals",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "3847764492",
       "Name": "EV_PopCooking",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "2966491673",
       "Name": "EV_PopEcologie",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "2548852145",
       "Name": "EV_PopJouet",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "3055193501",
       "Name": "EV_PopMedical",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "3140014166",
       "Name": "EV_PopMeteo",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "3570416449",
       "Name": "EV_PopMode",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "1757312268",
       "Name": "EV_PopMoney",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "4189303377",
       "Name": "EV_PopMusic",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "4142063351",
       "Name": "EV_PopParanormal",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "2676848790",
       "Name": "EV_PopPlane",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "3290879169",
       "Name": "EV_PopPolitics",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "3961471121",
       "Name": "EV_PopPrison",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "675278654",
       "Name": "EV_PopSport",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "3668260911",
       "Name": "EV_PopStudy",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "497504363",
       "Name": "EV_PopVideoGame",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "3427338642",
@@ -152,12 +144,12 @@
      {
       "Id": "756731615",
       "Name": "EV_PopWork",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "1254162402",
       "Name": "EV_PopWW",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "4105256245",
@@ -178,17 +170,17 @@
      {
       "Id": "1762137560",
       "Name": "EV_ThisIsThePolicePlay",
-      "MaxAttenuation": "450.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "4134584874",
       "Name": "EV_ThisIsThePoliceStop",
-      "MaxAttenuation": "0.000000"
+      "MaxAttenuation": "600.000000"
      },
      {
       "Id": "3309461680",
       "Name": "EV_WarningEye",
-      "MaxAttenuation": "600.000000"
+      "MaxAttenuation": "400.000000"
      },
      {
       "Id": "950254951",
