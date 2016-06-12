@@ -37,7 +37,8 @@
      },
      {
       "Id": "1252188432",
-      "Name": "EV_Ceiling"
+      "Name": "EV_Ceiling",
+      "MaxAttenuation": "1000.000000"
      },
      {
       "Id": "615245659",
@@ -54,6 +55,10 @@
      {
       "Id": "3748794763",
       "Name": "EV_ConfirmOut"
+     },
+     {
+      "Id": "591162122",
+      "Name": "EV_LoadingHand"
      },
      {
       "Id": "238576133",
@@ -217,6 +222,12 @@
       "Path": "SFX\\AmbMiddle1_8FCC05A6.wem"
      },
      {
+      "Id": "20529885",
+      "Language": "SFX",
+      "ShortName": "MainRemplie2.wav",
+      "Path": "SFX\\MainRemplie2_8FCC05A6.wem"
+     },
+     {
       "Id": "31215356",
       "Language": "SFX",
       "ShortName": "PopWork.wav",
@@ -239,6 +250,12 @@
       "Language": "SFX",
       "ShortName": "Eye2.wav",
       "Path": "SFX\\Eye2_8FCC05A6.wem"
+     },
+     {
+      "Id": "62665585",
+      "Language": "SFX",
+      "ShortName": "MainRemplie3.wav",
+      "Path": "SFX\\MainRemplie3_8FCC05A6.wem"
      },
      {
       "Id": "69517136",
@@ -335,6 +352,12 @@
       "Language": "SFX",
       "ShortName": "Selection2.wav",
       "Path": "SFX\\Selection2_8FCC05A6.wem"
+     },
+     {
+      "Id": "435085328",
+      "Language": "SFX",
+      "ShortName": "MainRemplie1.wav",
+      "Path": "SFX\\MainRemplie1_8FCC05A6.wem"
      },
      {
       "Id": "454145249",
