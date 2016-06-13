@@ -58,7 +58,9 @@
 				<Event Id="950254951" Name="EV_WindPlay"/>
 				<Event Id="3938887349" Name="EV_WindStop" MaxAttenuation="0.000000"/>
 				<Event Id="2877597234" Name="Panopticon"/>
+				<Event Id="2058982083" Name="Play_Ducking"/>
 				<Event Id="1281810935" Name="Start"/>
+				<Event Id="3502936469" Name="Stop_Ducking" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="2798134" Language="SFX">
@@ -316,6 +318,10 @@
 				<File Id="1065872233" Language="SFX">
 					<ShortName>AmbMiddle2.wav</ShortName>
 					<Path>SFX\AmbMiddle2_8FCC05A6.wem</Path>
+				</File>
+				<File Id="1071161578" Language="SFX">
+					<ShortName>MainRemplie1.wav</ShortName>
+					<Path>SFX\MainRemplie1_F8DCC980.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

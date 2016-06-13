@@ -210,8 +210,17 @@
       "Name": "Panopticon"
      },
      {
+      "Id": "2058982083",
+      "Name": "Play_Ducking"
+     },
+     {
       "Id": "1281810935",
       "Name": "Start"
+     },
+     {
+      "Id": "3502936469",
+      "Name": "Stop_Ducking",
+      "MaxAttenuation": "0.000000"
      }
     ],
     "IncludedMemoryFiles": [
@@ -598,6 +607,12 @@
       "Language": "SFX",
       "ShortName": "AmbMiddle2.wav",
       "Path": "SFX\\AmbMiddle2_8FCC05A6.wem"
+     },
+     {
+      "Id": "1071161578",
+      "Language": "SFX",
+      "ShortName": "MainRemplie1.wav",
+      "Path": "SFX\\MainRemplie1_F8DCC980.wem"
      }
     ]
    }
