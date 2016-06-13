@@ -57,6 +57,11 @@
       "MaxAttenuation": "0.000000"
      },
      {
+      "Id": "1061994025",
+      "Name": "EV_LoadindOStopPlus",
+      "MaxAttenuation": "400.000000"
+     },
+     {
       "Id": "591162122",
       "Name": "EV_LoadingHand"
      },

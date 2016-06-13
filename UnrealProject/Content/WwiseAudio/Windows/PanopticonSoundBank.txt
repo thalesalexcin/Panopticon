@@ -10,6 +10,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	756731615	EV_PopWork			\Default Work Unit\Pops\EV_PopWork	
 	843928844	EV_PopWarningStop			\Default Work Unit\EV_PopWarningStop	
 	950254951	EV_WindPlay			\Default Work Unit\EV_WindPlay	
+	1061994025	EV_LoadindOStopPlus			\Default Work Unit\EV_LoadindOStopPlus	
 	1252188432	EV_Ceiling			\Default Work Unit\EV_Ceiling	
 	1254162402	EV_PopWW			\Default Work Unit\EV_PopWW	
 	1281810935	Start			\Default Work Unit\Start	
@@ -90,7 +91,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	659211384	Grow	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\GrowWarning_F8DCC980.wem		\Actor-Mixer Hierarchy\Default Work Unit\Warning\Grow		117632
 	675534784	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopMode_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Mode\Pop		75212
 	694567616	Ceiling2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\Ceiling2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ceiling\Ceiling2		195440
-	695400244	nonSuspect	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopWarning_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Warning\nonSuspect		83014
+	695400244	nonSuspect	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopWarning_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\nonSuspect		83014
 	733032831	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopMusic_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Music\Pop		79448
 	742193860	AmbClose2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbClose2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbClose\AmbClose2		396473
 	744560602	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopCooking_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Cooking\Pop		88795
@@ -117,5 +118,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1044121913	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopParanormal_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Paranormal\Pop		71133
 	1046467624	AmbClose1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbClose1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbClose\AmbClose1		398727
 	1065872233	AmbMiddle2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbMiddle2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbMiddle\AmbMiddle2		257761
-	1071161578	LoadindO	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\MainRemplie1_F8DCC980.wem		\Actor-Mixer Hierarchy\Default Work Unit\LoadindO		32267
+	1071161578	Ducking	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\MainRemplie1_F8DCC980.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ducking		32267
 

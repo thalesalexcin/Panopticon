@@ -28,6 +28,7 @@
 				<Event Id="3748794763" Name="EV_ConfirmOut"/>
 				<Event Id="2078768975" Name="EV_LoadindOPlay"/>
 				<Event Id="501432397" Name="EV_LoadindOStop" MaxAttenuation="0.000000"/>
+				<Event Id="1061994025" Name="EV_LoadindOStopPlus" MaxAttenuation="400.000000"/>
 				<Event Id="591162122" Name="EV_LoadingHand"/>
 				<Event Id="3484693586" Name="EV_LoadingHandStop" MaxAttenuation="0.000000"/>
 				<Event Id="238576133" Name="EV_PopAlien" MaxAttenuation="400.000000"/>
