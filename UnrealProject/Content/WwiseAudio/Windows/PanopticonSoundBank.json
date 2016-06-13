@@ -48,8 +48,27 @@
       "Name": "EV_ConfirmOut"
      },
      {
+      "Id": "2078768975",
+      "Name": "EV_LoadindOPlay"
+     },
+     {
+      "Id": "501432397",
+      "Name": "EV_LoadindOStop",
+      "MaxAttenuation": "0.000000"
+     },
+     {
+      "Id": "1061994025",
+      "Name": "EV_LoadindOStopPlus",
+      "MaxAttenuation": "400.000000"
+     },
+     {
       "Id": "591162122",
       "Name": "EV_LoadingHand"
+     },
+     {
+      "Id": "3484693586",
+      "Name": "EV_LoadingHandStop",
+      "MaxAttenuation": "0.000000"
      },
      {
       "Id": "238576133",

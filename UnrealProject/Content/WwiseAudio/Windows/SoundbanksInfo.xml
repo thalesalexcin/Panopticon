@@ -26,7 +26,11 @@
 				<Event Id="615245641" Name="EV_ConfirmationSuspectT"/>
 				<Event Id="1597811436" Name="EV_ConfirmIn"/>
 				<Event Id="3748794763" Name="EV_ConfirmOut"/>
+				<Event Id="2078768975" Name="EV_LoadindOPlay"/>
+				<Event Id="501432397" Name="EV_LoadindOStop" MaxAttenuation="0.000000"/>
+				<Event Id="1061994025" Name="EV_LoadindOStopPlus" MaxAttenuation="400.000000"/>
 				<Event Id="591162122" Name="EV_LoadingHand"/>
+				<Event Id="3484693586" Name="EV_LoadingHandStop" MaxAttenuation="0.000000"/>
 				<Event Id="238576133" Name="EV_PopAlien" MaxAttenuation="400.000000"/>
 				<Event Id="2395277203" Name="EV_PopAnimals" MaxAttenuation="400.000000"/>
 				<Event Id="3847764492" Name="EV_PopCooking" MaxAttenuation="400.000000"/>
