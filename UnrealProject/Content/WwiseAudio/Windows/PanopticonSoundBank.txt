@@ -16,6 +16,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1757312268	EV_PopMoney			\Default Work Unit\Pops\EV_PopMoney	
 	1762137560	EV_ThisIsThePolicePlay			\Default Work Unit\EV_ThisIsThePolicePlay	
 	1937558711	EV_Selection2			\Default Work Unit\EV_Selection2	
+	2058982083	Play_Ducking			\Default Work Unit\Play_Ducking	
 	2395277203	EV_PopAnimals			\Default Work Unit\Pops\EV_PopAnimals	
 	2548852145	EV_PopJouet			\Default Work Unit\Pops\EV_PopJouet	
 	2676848790	EV_PopPlane			\Default Work Unit\Pops\EV_PopPlane	
@@ -27,6 +28,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3290879169	EV_PopPolitics			\Default Work Unit\Pops\EV_PopPolitics	
 	3309461680	EV_WarningEye			\Default Work Unit\EV_WarningEye	
 	3427338642	EV_PopWarningPlay			\Default Work Unit\EV_PopWarningPlay	
+	3502936469	Stop_Ducking			\Default Work Unit\Stop_Ducking	
 	3570416449	EV_PopMode			\Default Work Unit\Pops\EV_PopMode	
 	3668260911	EV_PopStudy			\Default Work Unit\Pops\EV_PopStudy	
 	3748794763	EV_ConfirmOut			\Default Work Unit\EV_ConfirmOut	
@@ -112,4 +114,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1044121913	Pop	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\PopParanormal_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GROWPOPS\Paranormal\Pop		71133
 	1046467624	AmbClose1	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbClose1_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbClose\AmbClose1		398727
 	1065872233	AmbMiddle2	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\AmbMiddle2_8FCC05A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance\Ambiance\AmbMiddle\AmbMiddle2		257761
+	1071161578	Ducking	C:\Users\Pochat.Damien\Documents\WwiseProjects\Panopticon\.cache\Windows\SFX\MainRemplie1_F8DCC980.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ducking		32267
 
